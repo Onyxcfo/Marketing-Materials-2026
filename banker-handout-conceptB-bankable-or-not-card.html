@@ -1,0 +1,106 @@
+<title>Onyx — Bankable or Not? (handout mockup, Concept B)</title>
+<style>
+  :root{
+    --onyx:#1A1A1C; --ink:#33323A; --paper:#F3EFE7; --paper-edge:#E7E0D2;
+    --brass:#B0894F; --brass-deep:#8C6A38; --rust:#8F3A2E; --rule:#C9C0AE; --soft:#6f6a5f;
+    --surface:#26262A;
+    --serif: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:radial-gradient(120% 90% at 50% -10%, #2f2f34 0%, var(--surface) 60%, #1d1d20 100%);
+    font-family:var(--sans);color:var(--ink);padding:48px 20px 64px;}
+  .intro{max-width:680px;margin:0 auto 40px;text-align:center;color:#D9D3C6;}
+  .intro .eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--brass);margin:0 0 14px;}
+  .intro h1{font-family:var(--serif);font-weight:600;color:#F3EFE7;font-size:23px;line-height:1.35;margin:0 0 12px;text-wrap:balance;}
+  .intro p{font-size:14px;line-height:1.6;margin:0 auto;max-width:60ch;color:#B9B2A4;}
+  .stage{display:flex;justify-content:center;}
+  .card{width:5in;height:7in;background:linear-gradient(180deg,var(--paper) 0%,#EFEAE0 100%);
+    border:1px solid var(--paper-edge);border-radius:6px;
+    box-shadow:0 1px 0 rgba(255,255,255,.4) inset,0 26px 50px -18px rgba(0,0,0,.65);
+    padding:0.48in 0.44in 0.4in;position:relative;display:flex;flex-direction:column;}
+  .card::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;
+    background:linear-gradient(90deg,var(--brass-deep),var(--brass) 45%,#D8BC85 75%,var(--brass));border-radius:6px 6px 0 0;}
+  .kicker{font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--brass-deep);margin:0 0 8px;}
+  .card h2{font-family:var(--serif);font-weight:600;color:var(--onyx);font-size:26px;line-height:1.1;margin:0 0 5px;letter-spacing:-.01em;}
+  .card .sub{font-size:12px;color:var(--soft);margin:0 0 6px;font-style:italic;}
+  .heads{display:flex;justify-content:space-between;font-size:9px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--soft);padding:0 0 6px;border-bottom:1.5px solid var(--onyx);margin:8px 0 0;}
+  .heads .r{color:var(--rust);} .heads .g{color:var(--brass-deep);}
+
+  .flag{display:grid;grid-template-columns:24px 1fr;gap:11px;padding:11px 0;border-bottom:1px solid rgba(201,192,174,.6);}
+  .flag:last-of-type{border-bottom:0;}
+  .flag .num{font-family:var(--serif);font-size:19px;font-weight:700;color:var(--rust);line-height:1;font-variant-numeric:tabular-nums;}
+  .flag .bad{font-size:13px;font-weight:700;color:var(--onyx);line-height:1.25;margin:0 0 3px;}
+  .flag .good{font-size:11.5px;color:var(--ink);line-height:1.35;display:flex;gap:7px;align-items:flex-start;}
+  .flag .good .arr{color:var(--brass-deep);font-weight:700;flex:0 0 auto;}
+
+  .foot{margin-top:auto;border-top:1.5px solid var(--onyx);padding-top:12px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;}
+  .foot .pitch{font-family:var(--serif);font-style:italic;font-size:12px;line-height:1.4;color:var(--onyx);margin:0 0 8px;text-wrap:balance;}
+  .foot .name{font-family:var(--serif);font-weight:600;font-size:15px;color:var(--onyx);line-height:1;}
+  .foot .name b{color:var(--brass-deep);}
+  .foot .ln{font-size:10px;color:var(--ink);line-height:1.7;font-variant-numeric:tabular-nums;margin-top:6px;}
+  .foot .ln b{color:var(--brass-deep);}
+  .foot .qr{flex:0 0 auto;width:70px;height:70px;border:1.5px dashed var(--brass-deep);border-radius:6px;
+    display:flex;align-items:center;justify-content:center;text-align:center;font-size:7.5px;letter-spacing:.06em;
+    text-transform:uppercase;color:#8c856f;line-height:1.35;padding:5px;}
+  .note{max-width:680px;margin:40px auto 0;text-align:center;color:#8e887b;font-size:11.5px;line-height:1.6;}
+  .note code{color:#cdbfa0;font-family:var(--sans);}
+  .printbtn{display:block;margin:26px auto 0;background:var(--brass);color:#1d1a14;border:0;font-family:var(--sans);
+    font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:11px 20px;border-radius:6px;cursor:pointer;}
+  .printbtn:hover{background:#c79a59;}.printbtn:focus-visible{outline:2px solid #F3EFE7;outline-offset:3px;}
+  @media (max-width:520px){.card{width:92vw;height:auto;aspect-ratio:5/7;padding:24px 20px;}}
+  @media print{body{background:#fff;padding:0;}.intro,.note,.printbtn{display:none;}.card{box-shadow:none;border:1px solid #ccc;border-radius:0;}}
+</style>
+
+<div class="intro">
+  <p class="eyebrow">Handout mockup · Concept B of 4</p>
+  <h1>Bankable, or Not?</h1>
+  <p>A diagnostic card — the five financial red flags that stall a credit request, each paired with what "good" looks like. Punchier and more teachable than the checklist; works well as the spine of the PowerPoint too.</p>
+</div>
+
+<div class="stage">
+  <article class="card" aria-label="Bankable or not card">
+    <p class="kicker">A desk reference from Onyx Accounting Group</p>
+    <h2>Bankable, or Not?</h2>
+    <p class="sub">Five things that stall a loan — and what good looks like.</p>
+    <div class="heads"><span class="r">The red flag</span><span class="g">What good looks like →</span></div>
+
+    <div class="flag"><span class="num">1</span><div>
+      <p class="bad">Accounts that don't reconcile</p>
+      <p class="good"><span class="arr">→</span> Bank, credit-card &amp; balance-sheet accounts reconciled right up to date.</p>
+    </div></div>
+
+    <div class="flag"><span class="num">2</span><div>
+      <p class="bad">Books that don't match the tax return</p>
+      <p class="good"><span class="arr">→</span> Financials that tie out cleanly to the returns and the bank records.</p>
+    </div></div>
+
+    <div class="flag"><span class="num">3</span><div>
+      <p class="bad">Revenue, but no clear cash flow</p>
+      <p class="good"><span class="arr">→</span> Cash flow you can see and project — lenders lend against it, not revenue.</p>
+    </div></div>
+
+    <div class="flag"><span class="num">4</span><div>
+      <p class="bad">Personal &amp; business funds commingled</p>
+      <p class="good"><span class="arr">→</span> Clean separation, so the business's real numbers stand on their own.</p>
+    </div></div>
+
+    <div class="flag"><span class="num">5</span><div>
+      <p class="bad">Stale or unexplained entries</p>
+      <p class="good"><span class="arr">→</span> Current books with every balance supported and explainable.</p>
+    </div></div>
+
+    <div class="foot">
+      <div>
+        <p class="pitch">Spot one of these in a deal? That's where we come in.</p>
+        <span class="name">ONYX <b>Accounting Group</b></span>
+        <div class="ln"><b>P</b> (480) 442-3119 · <b>W</b> onyxcfo.com</div>
+      </div>
+      <div class="qr">QR →<br>onyxcfo.com</div>
+    </div>
+  </article>
+</div>
+
+<button class="printbtn" onclick="window.print()">Print / Save as PDF</button>
+<p class="note">Concept B of four in <code>Banker-Handout-Concepts-2026.md</code>. Swap in the real logo, confirm brand hex/fonts, and point the QR at its destination to finalize.</p>

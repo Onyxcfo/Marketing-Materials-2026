@@ -1,0 +1,110 @@
+<title>Onyx — Bookkeeper / Controller / CFO ladder (handout mockup, Concept C)</title>
+<style>
+  :root{
+    --onyx:#1A1A1C; --ink:#33323A; --paper:#F3EFE7; --paper-edge:#E7E0D2;
+    --brass:#B0894F; --brass-deep:#8C6A38; --rule:#C9C0AE; --soft:#6f6a5f;
+    --surface:#26262A;
+    --serif: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:radial-gradient(120% 90% at 50% -10%, #2f2f34 0%, var(--surface) 60%, #1d1d20 100%);
+    font-family:var(--sans);color:var(--ink);padding:48px 20px 64px;}
+  .intro{max-width:680px;margin:0 auto 40px;text-align:center;color:#D9D3C6;}
+  .intro .eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--brass);margin:0 0 14px;}
+  .intro h1{font-family:var(--serif);font-weight:600;color:#F3EFE7;font-size:23px;line-height:1.35;margin:0 0 12px;text-wrap:balance;}
+  .intro p{font-size:14px;line-height:1.6;margin:0 auto;max-width:60ch;color:#B9B2A4;}
+  .stage{display:flex;justify-content:center;}
+  .card{width:5in;height:7in;background:linear-gradient(180deg,var(--paper) 0%,#EFEAE0 100%);
+    border:1px solid var(--paper-edge);border-radius:6px;
+    box-shadow:0 1px 0 rgba(255,255,255,.4) inset,0 26px 50px -18px rgba(0,0,0,.65);
+    padding:0.46in 0.42in 0.4in;position:relative;display:flex;flex-direction:column;}
+  .card::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;
+    background:linear-gradient(90deg,var(--brass-deep),var(--brass) 45%,#D8BC85 75%,var(--brass));border-radius:6px 6px 0 0;}
+  .kicker{font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--brass-deep);margin:0 0 8px;}
+  .card h2{font-family:var(--serif);font-weight:600;color:var(--onyx);font-size:23px;line-height:1.12;margin:0 0 5px;letter-spacing:-.01em;text-wrap:balance;}
+  .card .sub{font-size:11.5px;color:var(--soft);margin:0 0 15px;font-style:italic;}
+
+  .ladder{display:flex;flex-direction:column;gap:9px;}
+  .tier{position:relative;border:1px solid var(--rule);border-radius:5px;padding:11px 12px 12px;background:rgba(255,255,255,.42);}
+  .tier.t2{margin-left:14px;background:rgba(176,137,79,.07);border-color:rgba(176,137,79,.45);}
+  .tier.t3{margin-left:28px;background:var(--onyx);border-color:var(--onyx);}
+  .tier .top{display:flex;align-items:baseline;gap:9px;}
+  .tier .step{font-family:var(--serif);font-style:italic;font-size:13px;color:var(--brass-deep);font-variant-numeric:tabular-nums;}
+  .tier .role{font-family:var(--serif);font-weight:600;font-size:17px;color:var(--onyx);line-height:1;}
+  .tier .does{font-size:11px;color:var(--ink);line-height:1.4;margin:5px 0 8px;}
+  .tier .out{font-size:10px;color:var(--soft);line-height:1.4;display:flex;gap:6px;align-items:flex-start;}
+  .tier .out .lbl{flex:0 0 auto;font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-size:8.5px;color:var(--brass-deep);margin-top:1px;}
+  /* dark top tier */
+  .tier.t3 .role{color:#F3EFE7;} .tier.t3 .step{color:#E8C98C;}
+  .tier.t3 .does{color:#D9D3C6;} .tier.t3 .out{color:#b3ab9b;} .tier.t3 .out .lbl{color:#E8C98C;}
+
+  .seam{font-size:9.5px;color:var(--brass-deep);text-align:center;letter-spacing:.04em;font-style:italic;margin:1px 0;}
+
+  .foot{margin-top:auto;border-top:1.5px solid var(--onyx);padding-top:12px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;}
+  .foot .pitch{font-family:var(--serif);font-style:italic;font-size:12px;line-height:1.4;color:var(--onyx);margin:0 0 8px;text-wrap:balance;}
+  .foot .name{font-family:var(--serif);font-weight:600;font-size:15px;color:var(--onyx);line-height:1;}
+  .foot .name b{color:var(--brass-deep);}
+  .foot .ln{font-size:10px;color:var(--ink);line-height:1.7;font-variant-numeric:tabular-nums;margin-top:6px;}
+  .foot .ln b{color:var(--brass-deep);}
+  .foot .qr{flex:0 0 auto;width:70px;height:70px;border:1.5px dashed var(--brass-deep);border-radius:6px;
+    display:flex;align-items:center;justify-content:center;text-align:center;font-size:7.5px;letter-spacing:.06em;
+    text-transform:uppercase;color:#8c856f;line-height:1.35;padding:5px;}
+  .note{max-width:680px;margin:40px auto 0;text-align:center;color:#8e887b;font-size:11.5px;line-height:1.6;}
+  .note code{color:#cdbfa0;font-family:var(--sans);}
+  .printbtn{display:block;margin:26px auto 0;background:var(--brass);color:#1d1a14;border:0;font-family:var(--sans);
+    font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:11px 20px;border-radius:6px;cursor:pointer;}
+  .printbtn:hover{background:#c79a59;}.printbtn:focus-visible{outline:2px solid #F3EFE7;outline-offset:3px;}
+  @media (max-width:520px){.card{width:92vw;height:auto;aspect-ratio:5/7;padding:24px 18px;}.tier.t2{margin-left:8px;}.tier.t3{margin-left:16px;}}
+  @media print{body{background:#fff;padding:0;}.intro,.note,.printbtn{display:none;}.card{box-shadow:none;border:1px solid #ccc;border-radius:0;}}
+</style>
+
+<div class="intro">
+  <p class="eyebrow">Handout mockup · Concept C of 4</p>
+  <h1>Bookkeeper → Controller → CFO</h1>
+  <p>The financial-maturity ladder — what each role does, and the signs a client has outgrown the one below. It helps a banker gauge a client's stage and know <em>when</em> to refer, and it shows Onyx covers all three with one team.</p>
+</div>
+
+<div class="stage">
+  <article class="card" aria-label="Financial maturity ladder card">
+    <p class="kicker">A desk reference from Onyx Accounting Group</p>
+    <h2>What does your client actually need?</h2>
+    <p class="sub">Three stages of financial support — and when a business moves up.</p>
+
+    <div class="ladder">
+      <div class="tier t1">
+        <div class="top"><span class="step">Stage 1</span><span class="role">Bookkeeper</span></div>
+        <p class="does">Keeps the books current — daily transactions, reconciliations, AP/AR, payroll support.</p>
+        <p class="out"><span class="lbl">Outgrown when</span> numbers are always late, or you can't trust them enough to decide.</p>
+      </div>
+
+      <p class="seam">↑ ready for a tighter, more reliable close</p>
+
+      <div class="tier t2">
+        <div class="top"><span class="step">Stage 2</span><span class="role">Controller</span></div>
+        <p class="does">A faster, cleaner month-end close, real internal controls, and monthly financials you can rely on.</p>
+        <p class="out"><span class="lbl">Outgrown when</span> you're borrowing, raising capital, or need forecasting and strategy.</p>
+      </div>
+
+      <p class="seam">↑ ready to turn numbers into strategy</p>
+
+      <div class="tier t3">
+        <div class="top"><span class="step">Stage 3</span><span class="role">Fractional CFO</span></div>
+        <p class="does">Forecasting, cash-flow planning, and the financing &amp; investor strategy behind a credit request or a raise.</p>
+        <p class="out"><span class="lbl">This is the stage</span> where deals get done — and where a prepared borrower stands out.</p>
+      </div>
+    </div>
+
+    <div class="foot">
+      <div>
+        <p class="pitch">One team, all three stages — so your client never has to start over.</p>
+        <span class="name">ONYX <b>Accounting Group</b></span>
+        <div class="ln"><b>P</b> (480) 442-3119 · <b>W</b> onyxcfo.com</div>
+      </div>
+      <div class="qr">QR →<br>onyxcfo.com</div>
+    </div>
+  </article>
+</div>
+
+<button class="printbtn" onclick="window.print()">Print / Save as PDF</button>
+<p class="note">Concept C of four in <code>Banker-Handout-Concepts-2026.md</code>. Swap in the real logo, confirm brand hex/fonts, and point the QR at its destination to finalize.</p>
