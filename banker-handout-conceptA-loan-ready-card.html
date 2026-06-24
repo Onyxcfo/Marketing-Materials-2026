@@ -1,0 +1,247 @@
+<title>Onyx — Loan-Ready Borrower Checklist (handout mockup)</title>
+<style>
+  :root{
+    --onyx:#1A1A1C;
+    --ink:#33323A;          /* slightly violet-grey, chosen not default */
+    --paper:#F3EFE7;        /* warm card stock */
+    --paper-edge:#E7E0D2;
+    --brass:#B0894F;        /* muted antique brass accent */
+    --brass-deep:#8C6A38;
+    --rule:#C9C0AE;
+    --surface:#26262A;      /* the "desk" the cards sit on */
+    --serif: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+
+  *{box-sizing:border-box;}
+
+  body{
+    margin:0;
+    background:
+      radial-gradient(120% 90% at 50% -10%, #2f2f34 0%, var(--surface) 60%, #1d1d20 100%);
+    font-family:var(--sans);
+    color:var(--ink);
+    padding:48px 20px 64px;
+  }
+
+  .intro{
+    max-width:680px;margin:0 auto 40px;text-align:center;color:#D9D3C6;
+  }
+  .intro .eyebrow{
+    font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--brass);
+    margin:0 0 14px;
+  }
+  .intro h1{
+    font-family:var(--serif);font-weight:600;color:#F3EFE7;
+    font-size:23px;line-height:1.35;margin:0 0 12px;text-wrap:balance;
+  }
+  .intro p{font-size:14px;line-height:1.6;margin:0 auto;max-width:60ch;color:#B9B2A4;}
+
+  .stage{
+    display:flex;flex-wrap:wrap;gap:34px;justify-content:center;align-items:flex-start;
+  }
+
+  /* ---- the card ---- */
+  .card{
+    width:5in;height:7in;
+    background:
+      linear-gradient(180deg, var(--paper) 0%, #EFEAE0 100%);
+    border:1px solid var(--paper-edge);
+    border-radius:6px;
+    box-shadow:0 1px 0 rgba(255,255,255,.4) inset, 0 26px 50px -18px rgba(0,0,0,.65);
+    padding:0.5in 0.46in;
+    position:relative;
+    display:flex;flex-direction:column;
+  }
+  .card::before{ /* thin brass top frame */
+    content:"";position:absolute;left:0;right:0;top:0;height:5px;
+    background:linear-gradient(90deg,var(--brass-deep),var(--brass) 45%,#D8BC85 75%,var(--brass));
+    border-radius:6px 6px 0 0;
+  }
+
+  .face-label{
+    position:absolute;top:-26px;left:2px;font-size:10px;letter-spacing:.22em;
+    text-transform:uppercase;color:#9a9384;
+  }
+
+  /* ---- FRONT ---- */
+  .kicker{
+    font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--brass-deep);
+    margin:0 0 14px;
+  }
+  .card h2{
+    font-family:var(--serif);font-weight:600;color:var(--onyx);
+    font-size:25px;line-height:1.16;margin:0 0 9px;letter-spacing:-.01em;text-wrap:balance;
+  }
+  .lede{
+    font-size:12.5px;line-height:1.5;color:var(--ink);margin:0 0 18px;max-width:42ch;
+  }
+  .rule{height:1px;background:var(--rule);border:0;margin:0 0 16px;}
+
+  .group + .group{margin-top:17px;}
+  .group h3{
+    font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--brass-deep);
+    margin:0 0 3px;display:flex;align-items:baseline;gap:8px;
+  }
+  .group h3 .n{font-family:var(--serif);font-style:italic;letter-spacing:0;text-transform:none;color:var(--onyx);font-size:13px;}
+  .group .cap{font-size:11px;color:#6f6a5f;margin:0 0 10px;line-height:1.4;font-style:italic;}
+
+  ul{list-style:none;margin:0;padding:0;}
+  li{
+    display:flex;gap:10px;align-items:flex-start;
+    font-size:12.5px;line-height:1.4;color:var(--onyx);
+    padding:5.5px 0;border-bottom:1px solid rgba(201,192,174,.5);
+  }
+  li:last-child{border-bottom:0;}
+  .box{
+    flex:0 0 auto;width:13px;height:13px;margin-top:1px;border:1.5px solid var(--brass-deep);
+    border-radius:2.5px;background:rgba(255,255,255,.5);
+  }
+
+  .front-foot{
+    margin-top:auto;padding-top:14px;border-top:1.5px solid var(--onyx);
+  }
+  .front-foot p{
+    font-family:var(--serif);font-style:italic;font-size:12.5px;line-height:1.45;
+    color:var(--onyx);margin:0;text-wrap:balance;
+  }
+
+  /* ---- BACK ---- */
+  .back{justify-content:flex-start;}
+  .wordmark{margin:2px 0 20px;}
+  .wordmark .name{
+    font-family:var(--serif);font-weight:600;font-size:21px;letter-spacing:.02em;color:var(--onyx);
+    display:block;line-height:1;
+  }
+  .wordmark .name b{color:var(--brass-deep);font-weight:600;}
+  .wordmark .sub{
+    font-size:9.5px;letter-spacing:.34em;text-transform:uppercase;color:#7d7768;margin-top:7px;display:block;
+  }
+  .back h2{
+    font-family:var(--serif);font-weight:600;font-size:21px;line-height:1.22;color:var(--onyx);
+    margin:0 0 11px;text-wrap:balance;
+  }
+  .back .body{font-size:12.5px;line-height:1.55;color:var(--ink);margin:0 0 18px;}
+  .help-label{
+    font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--brass-deep);margin:0 0 9px;
+  }
+  .help{margin:0 0 20px;}
+  .help li{border-bottom:0;padding:4px 0;align-items:flex-start;}
+  .help li .dot{flex:0 0 auto;width:6px;height:6px;border-radius:50%;background:var(--brass);margin-top:6px;}
+
+  .contact{
+    margin-top:auto;display:flex;gap:14px;align-items:flex-end;justify-content:space-between;
+    border-top:1.5px solid var(--onyx);padding-top:14px;
+  }
+  .contact .who .nm{font-weight:700;font-size:12.5px;color:var(--onyx);}
+  .contact .who .ti{font-size:10.5px;color:#6f6a5f;margin:2px 0 9px;}
+  .contact .who .ln{font-size:11.5px;color:var(--ink);line-height:1.7;font-variant-numeric:tabular-nums;}
+  .contact .who .ln b{color:var(--brass-deep);}
+  .qr{
+    flex:0 0 auto;width:78px;height:78px;border:1.5px dashed var(--brass-deep);border-radius:6px;
+    display:flex;align-items:center;justify-content:center;text-align:center;
+    font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:#8c856f;line-height:1.35;padding:6px;
+  }
+  .addr{font-size:9.5px;color:#8c856f;letter-spacing:.04em;margin:12px 0 0;text-align:center;}
+
+  .note{max-width:680px;margin:40px auto 0;text-align:center;color:#8e887b;font-size:11.5px;line-height:1.6;}
+  .note code{color:#cdbfa0;font-family:var(--sans);}
+
+  .printbtn{
+    display:block;margin:26px auto 0;background:var(--brass);color:#1d1a14;border:0;
+    font-family:var(--sans);font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;
+    padding:11px 20px;border-radius:6px;cursor:pointer;
+  }
+  .printbtn:hover{background:#c79a59;}
+  .printbtn:focus-visible{outline:2px solid #F3EFE7;outline-offset:3px;}
+
+  @media (max-width:520px){
+    .card{width:92vw;height:auto;aspect-ratio:5/7;padding:26px 22px;}
+  }
+  @media print{
+    body{background:#fff;padding:0;}
+    .intro,.note,.printbtn,.face-label{display:none;}
+    .stage{gap:0;}
+    .card{box-shadow:none;border:1px solid #ccc;border-radius:0;page-break-after:always;}
+  }
+</style>
+
+<div class="intro">
+  <p class="eyebrow">Handout mockup · Concept A of 4</p>
+  <h1>The Loan-Ready Borrower Checklist</h1>
+  <p>A double-sided desk card for Steven's banker pitch. The front is the tool a banker keeps; the back is Onyx's referral pitch. Shown at 5×7 in. — colors and wordmark are a starting point until the real logo and brand values are dropped in.</p>
+</div>
+
+<div class="stage">
+
+  <!-- FRONT -->
+  <article class="card front" aria-label="Card front">
+    <span class="face-label">Front</span>
+    <p class="kicker">A desk reference from Onyx Accounting Group</p>
+    <h2>The Loan-Ready Borrower Checklist</h2>
+    <p class="lede">Lenders lend against confidence in the numbers. Here's what turns a borrower's financials into a fast yes.</p>
+    <hr class="rule" />
+
+    <div class="group">
+      <h3><span class="n">1.</span> The document set</h3>
+      <p class="cap">What underwriting expects on the desk.</p>
+      <ul>
+        <li><span class="box"></span> Three years of business tax returns</li>
+        <li><span class="box"></span> Three years of year-end financial statements</li>
+        <li><span class="box"></span> A current interim statement (most recent month)</li>
+        <li><span class="box"></span> A personal financial statement for each guarantor</li>
+        <li><span class="box"></span> A current debt schedule</li>
+      </ul>
+    </div>
+
+    <div class="group">
+      <h3><span class="n">2.</span> The numbers behind them</h3>
+      <p class="cap">What makes those documents credible.</p>
+      <ul>
+        <li><span class="box"></span> Bank, credit-card &amp; balance-sheet accounts reconciled to date</li>
+        <li><span class="box"></span> Books that tie out to the tax returns and bank records</li>
+        <li><span class="box"></span> A clean, consistent chart of accounts</li>
+        <li><span class="box"></span> Cash flow that's clear &mdash; not just revenue</li>
+        <li><span class="box"></span> No stale balances or unexplained entries</li>
+      </ul>
+    </div>
+
+    <div class="front-foot">
+      <p>Books that don't check these boxes yet? That's exactly what we fix.</p>
+    </div>
+  </article>
+
+  <!-- BACK -->
+  <article class="card back" aria-label="Card back">
+    <span class="face-label">Back</span>
+    <div class="wordmark">
+      <span class="name">ONYX <b>Accounting Group</b></span>
+      <span class="sub">Bookkeeping · Controller · CFO</span>
+    </div>
+
+    <h2>When a deal needs clean books, send it to us.</h2>
+    <p class="body">Onyx is a Scottsdale-based accounting team — bookkeeping through CFO-level strategy — that gets a borrower's financials loan-ready and keeps them that way. We work alongside you and your client's CPA, so deals reach your desk prepared.</p>
+
+    <p class="help-label">How we help your pipeline</p>
+    <ul class="help">
+      <li><span class="dot"></span> <span><b>Cleanup &amp; catch-up</b> for books that aren't lendable yet</span></li>
+      <li><span class="dot"></span> <span><b>Monthly bookkeeping &amp; controller</b> services that stay current and reconciled</span></li>
+      <li><span class="dot"></span> <span><b>CFO-level forecasting &amp; cash-flow projections</b> built for a credit request</span></li>
+    </ul>
+
+    <div class="contact">
+      <div class="who">
+        <div class="nm">Steven Nikolov</div>
+        <div class="ti">Founder, Principal &amp; CFO</div>
+        <div class="ln"><b>P</b> (480) 442-3119<br><b>E</b> contact@onyxcfo.com<br><b>W</b> onyxcfo.com</div>
+      </div>
+      <div class="qr">QR →<br>onyxcfo.com</div>
+    </div>
+    <p class="addr">14614 N Kierland Blvd, Suite N220 · Scottsdale, AZ 85254</p>
+  </article>
+
+</div>
+
+<button class="printbtn" onclick="window.print()">Print / Save as PDF</button>
+
+<p class="note">This is one of four concepts in <code>Banker-Handout-Concepts-2026.md</code>. Swap the <code>ONYX</code> wordmark for the real logo, confirm brand hex/fonts, and point the QR at its destination to finalize for print.</p>
