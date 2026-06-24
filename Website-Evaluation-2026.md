@@ -210,4 +210,52 @@ It's the only page that delivers **specifics**: a real deliverables list and a c
 
 ---
 
-*Note: Sections 8–10 (Home, About Us, CFO & Controller Services) are based on the actual page source you provided. The remaining two pages (Startups & Small Business, Contact) were reconstructed from public search excerpts because the site blocks automated fetching — paste their HTML the same way and I'll verify those too. Once all pages are confirmed, I can draft rewritten copy in your brand voice.*
+## 11. Startups & Small Business Services page — verified findings (from the live source)
+
+Current structure and exact copy:
+- **Hero:** "Startups & Small Business" label + "Accounting Made Easy" — over a **background video** (~14-second MP4).
+- **small business services** — three packages, each with a deliverables list:
+  - **Training & Setup** — "Don't want to engage accountants long term and simply do the basics on your own?… No long term commitments, just a one time fee and peace of mind." (setup call, connect bank/CC feeds, set up QuickBooks, bank rules, 1 month of reconciliations + training, fixed-assets template, chart of accounts).
+  - **Ongoing Support** — "Starting a small business means you don't yet need and can't yet afford a Controller, CFO or even an Accounting Manager… Onyx Accounting Group's Starter Package is ideal for clients that want to forge the right path." (AP, apply payments, bank/CC connection review, monthly bank recs, Arizona monthly TPT prep, fixed-assets maintenance, monthly CC recs, monthly B/S + P&L highlights).
+  - **Cleanup** — "Sometimes due to nature of how businesses start, the books can get messy… (Think Chris Farley's character from SNL)." (tie to last tax return, reconcile bank/CC/AR/AP/inventory/prepaids, clear alerts & feed issues, depreciation schedule).
+- **Pricing note:** "Pricing varies for services selected, pricing is contingent on number of accounts*" → button **"LET'S CONNECT"** → /contact.
+
+### 11.1 Another strong page — the substance already exists
+Like the CFO page, this delivers real specifics, a pricing expectation, and a working CTA. Between this page and the CFO page, **the detailed proof Onyx needs is already written** — the home page just doesn't surface any of it. The fix is largely surfacing, not creating.
+
+### 11.2 Tone slip to fix
+- **"(Think Chris Farley's character from SNL)"** — a dated, jokey pop-culture aside that won't land for many visitors and undercuts the professional tone on an otherwise solid page. Cut it (or replace with a plain line like "books that have fallen behind").
+- The **"Ongoing Support"** package is called the **"Starter Package"** in its body text — pick one name and use it consistently.
+
+### 11.3 Copy edits (verbatim)
+- "Establish repeating bank rules **to for** automation" → "rules for automation."
+- "get you **on back** the right track" → "get you back on the right track."
+- "you have **a** peace of mind" → "peace of mind" (also appears elsewhere).
+- "Reconcile **credit cards balances**" → "credit card balances."
+- "due to **nature** of how businesses start" → "due to the nature of."
+- Leading space before the "small business services" heading.
+
+### 11.4 Structure
+- The three package names are styled paragraphs, not real headings — making them proper headings improves scannability and SEO.
+- Same site-wide issues carry over: **empty meta description**, **footer phone → Google Maps instead of `tel:`**, **default Squarespace social accounts**, background video (confirm muted/light with image fallback).
+
+---
+
+## 12. Summary across all pages reviewed
+
+**The single biggest gap (verified on every page): no people.** Not one page names a team member, shows a photo, or links a LinkedIn profile. For a "look us up" site, fixing that is the highest-value change.
+
+**The good news:** the two service pages (CFO & Controller, Startups & Small Business) already contain exactly the kind of specific, credible, deliverable-level content the site needs. The home page and About page just don't surface it, and the tone wobbles between professional (About, service intros) and jokey (home-page analogies, the SNL aside).
+
+**Recurring fixes that apply site-wide:**
+1. Add a real **team/leadership** presence (bios, photos, LinkedIn).
+2. **Empty meta descriptions** on every page — add unique ones.
+3. **Footer phone links to Google Maps**, not `tel:` — fix the click-to-call.
+4. **Default Squarespace social accounts** (instagram.com/squarespace, etc.) still configured.
+5. **Tone:** keep the calm, professional register of the service pages; cut the stacked analogies and pop-culture asides.
+6. A scattering of **typos/grammar** (catalogued per page above).
+7. Add **testimonials/proof**, an **FAQ**, and a short **income-tax-scope** clarification (you do Arizona TPT; state whether you prepare income-tax returns).
+
+---
+
+*Note: Sections 8–11 (Home, About Us, CFO & Controller Services, Startups & Small Business) are all based on the actual page source you provided. Only the **Contact** page remains unverified (reconstructed from public info) — paste its HTML and I'll confirm it. Once it's in, I'm ready to draft rewritten copy in your brand voice, starting with a Team section and a tightened home page.*
