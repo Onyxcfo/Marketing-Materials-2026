@@ -32,8 +32,6 @@ None of this is hard to fix. The work is mostly *content and accuracy*, which is
 ## 3. Content issues (the main event)
 
 ### 3.1 Brand name — the site is right; align your other docs
-- The official firm name is **"Onyx Accounting Group,"** and the website uses it correctly. No change needed on the site.
-- For consistency in due diligence, make sure everything *else* matches: your internal/marketing master prompts currently say "Onyx | Bookkeeping & CFO Services," and LinkedIn, email signatures, and any directory listings should all read "Onyx Accounting Group."
 - The **About origin story** references an unnamed "Director at a national top-10 firm." Whether or not that's literally your founding story, the page would be far stronger if it *named* your leadership — Steven Nikolov (Principal), Lisa Danforth (CFO), Cindi Campbell (Controller), and the rest of the team. People doing due diligence want to see who's behind the firm.
 
 ### 3.2 No team = the biggest single gap
