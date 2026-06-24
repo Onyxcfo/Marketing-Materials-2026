@@ -101,27 +101,29 @@ I looked at comparable firms in two buckets:
 >
 > We work with founders and owners who are usually one of three places: under a deadline for a bank or year-end and needing books cleaned up; frustrated by a lack of financial information to make decisions; or simply unsure where to start. We build the foundation, keep it clean, and help you grow.
 
-**Meet the team** *(roster + LinkedIn links confirmed by Onyx. LinkedIn blocks automated reading, so the bio sentence for each person needs to be pasted/filled — see §9. Titles below are from the internal master prompt; confirm each.)*
+**Meet the team** *(bios drafted from your job descriptions — client-facing and ready to use. Add headshots. I deliberately did **not** state CPA/years-of-experience for anyone, since the JDs don't confirm them — add those per person if accurate, as they're strong trust signals.)*
 
-> **Steven Nikolov — [Principal]** · [LinkedIn](https://www.linkedin.com/in/steven-nikolov-40051758/)
-> [1–2 sentences: background, years of experience, the work/clients he leads, any credentials.]
+> **Steven Nikolov — Founder & Principal** · [LinkedIn](https://www.linkedin.com/in/steven-nikolov-40051758/)
+> Steven founded Onyx to give growing businesses something most firms don't: a full accounting team led by a hands-on CFO. He works directly with key clients on financial strategy and advisory, and sets the standard for the precision and service the whole firm is known for.
 >
-> **Lisa Danforth — [CFO]** · [LinkedIn](https://www.linkedin.com/in/lisa-danforth/)
-> [Bio: reviews accountant work and ensures quality control across financial reporting; add background/credentials.]
+> **Lisa Danforth — Chief Financial Officer** · [LinkedIn](https://www.linkedin.com/in/lisa-danforth/)
+> Lisa leads CFO-level reporting and advisory across Onyx's client portfolio, with deep expertise in complex, multi-entity structures — LLCs, holding companies, and subsidiaries. She guides clients through onboarding, payroll, and tax registrations, and reviews the team's work so every financial statement is accurate and decision-ready.
 >
-> **Cindi Campbell — [Controller]** · [LinkedIn](https://www.linkedin.com/in/cindi-campbell-0744792b/)
-> [Bio: manages sophisticated books and complex multi-entity clients; add background.]
+> **Cindi Campbell — Controller** · [LinkedIn](https://www.linkedin.com/in/cindi-campbell-0744792b/)
+> As Controller, Cindi anchors the day-to-day accounting that keeps client books clean and current. She manages month-end close, AP/AR, and billing, leads weekly client reviews, and coordinates the accounting team so deadlines are met and nothing slips.
 >
-> **Christine Johnson — [Staff Accountant]** · [LinkedIn](https://www.linkedin.com/in/christine-johnson-a7840b26b/)
-> [Bio: handles daily AP/AR and reconciliations for a large client load; add background.]
+> **Christine Johnson — Staff Accountant** · [LinkedIn](https://www.linkedin.com/in/christine-johnson-a7840b26b/)
+> Christine keeps client books accurate and up to date, handling daily transactions, reconciliations, and month-end support. She's a steady hand on recurring deliverables, making sure financials stay organized and on time.
 >
-> **Valentina Dikova — [Staff Accountant]** · [LinkedIn](https://www.linkedin.com/in/valentina-dikova-29567815b/)
-> [Bio: recently joined the Onyx team; add role focus and background.]
+> **Valentina Dikova — Staff Accountant** · [LinkedIn](https://www.linkedin.com/in/valentina-dikova-29567815b/)
+> Valentina supports client bookkeeping, payroll coordination, and month-end close, and brings international accounting experience that broadens the team's capacity. She's focused on accuracy and keeping client records clean and current.
 >
-> **Josephine Mack — [Chief of Staff]** · [LinkedIn](https://www.linkedin.com/in/josephinemack/)
-> [Bio: leads operations, billing, and workflow so client work runs smoothly; add background.]
+> **Josephine Mack — Chief of Staff** · [LinkedIn](https://www.linkedin.com/in/josephinemack/)
+> As Chief of Staff, Josephine makes sure the client experience runs smoothly — coordinating onboarding, communications, billing, and the systems behind the scenes. She's the operational bridge between leadership and the accounting team.
 
-*(Note: your master prompt also lists Lisa Wojcik as a staff accountant — include or omit based on the current roster. The six people above match the LinkedIn profiles you provided.)*
+*Titling & disclosure notes to confirm:*
+- *Steven's full internal title is **Principal / CFO** and Lisa is also **CFO**. To avoid two "CFO" titles publicly, I set Steven as **Founder & Principal**. Change if you'd rather show both as CFO.*
+- *Valentina's job description references Bulgaria-based / cross-border operations. I described it as "international accounting experience" rather than naming an offshore team — decide how visible you want that to be publicly.*
 
 **Our values** *(from your master prompt — make them visible)*
 > **Clarity** — Organized, audit-ready work and plain-language answers.
@@ -204,7 +206,7 @@ I looked at comparable firms in two buckets:
 
 ## 9. What I need from you to finalize
 
-1. **Team:** names + LinkedIn URLs are in (see §4). Still needed — confirmed **titles**, a **1–2 line bio** per person (LinkedIn can't be read automatically, so paste each person's headline/About text or just tell me what to say), any **credentials**, and **headshots**.
+1. **Team:** ✅ bios drafted from your job descriptions (see §4). Remaining: **headshots**, optional **credentials/years** per person (only if accurate), and confirm the **two titling/disclosure notes** (Steven's title; how visible to make the international team).
 2. **Proof:** 2–4 client testimonials (first name + industry is fine) and any stat you can stand behind.
 3. **Scope confirmations:** exact tax language (TPT vs. income tax), onboarding timeline, whether you replace or augment an existing bookkeeper.
 4. **Pricing language:** confirm the flat-fee/hourly framing is how you want it stated publicly.
