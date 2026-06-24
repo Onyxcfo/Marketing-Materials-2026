@@ -11,7 +11,6 @@
 
 The site is clean and loads fine, but it reads as **out of date and inconsistent with who Onyx is today.** For a "look us up" site, the single most important quality is that everything a visitor finds is *accurate, current, and consistent* with what they hear from you directly. Right now there are several gaps that would make a careful visitor hesitate:
 
-- **Brand name is consistent on the site** — "Onyx Accounting Group" is correct. Note for cleanup: your *internal/marketing master prompts* call the firm "Onyx | Bookkeeping & CFO Services," so align those documents (and any email signatures) to the official "Onyx Accounting Group" name.
 - The About story ("founded when a Director at a national top-10 firm realized the industry was stuck in the mud") should be checked to confirm it **names your current leadership and team** — the live page currently tells the story without naming any people.
 - There are **no named team members, no photos, no LinkedIn links** — the #1 trust signal for a firm this size is missing.
 - The tone in places (the "pilot flying the plane and serving cocktails" analogy) is **more jokey than your stated brand voice** of warm, professional, clear, and confident.
