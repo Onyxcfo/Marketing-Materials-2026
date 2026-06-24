@@ -97,7 +97,7 @@ I looked at comparable firms in two buckets:
 > #### A Scottsdale-based team serving businesses nationwide.
 
 **Who we are** *(keep your strong existing paragraph; tightened)*
-> Onyx Accounting Group is a financial operations firm specializing in fractional CFO and controller services, with the day-to-day bookkeeping to back them up — from your first set of books to ongoing strategic support. We bring [top-10 firm experience] and [10+ years] of private-industry expertise to every client, and we tailor our support to your goals.
+> Onyx Accounting Group is a financial operations firm specializing in fractional CFO and controller services, with the day-to-day bookkeeping to back them up — from your first set of books to ongoing strategic support. We bring [top-10 firm experience] and [15+ years] of private-industry expertise to every client, and we tailor our support to your goals.
 >
 > We work with founders and owners who are usually one of three places: under a deadline for a bank or year-end and needing books cleaned up; frustrated by a lack of financial information to make decisions; or simply unsure where to start. We build the foundation, keep it clean, and help you grow.
 
