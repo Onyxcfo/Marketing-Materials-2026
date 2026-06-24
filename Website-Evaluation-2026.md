@@ -189,4 +189,25 @@ The "WHO WE ARE" copy is calmer and more professional than the home page's analo
 
 ---
 
-*Note: Sections 8–9 (Home and About Us) are based on the actual page source you provided. The remaining pages (CFO & Controller Services, Startups & Small Business, Contact) were reconstructed from public search excerpts because the site blocks automated fetching — paste their HTML the same way and I'll verify those too. Once all pages are confirmed, I can draft rewritten copy in your brand voice.*
+## 10. CFO & Controller Services page — verified findings (from the live source)
+
+Current structure and exact copy:
+- **Hero:** "CFO & CONTROLLER SERVICES" label + "YOUR FINANCIAL PARTNERS" — over a **background video** (a ~12-second hosted MP4).
+- **Strategic CFO Services:** "At Onyx Accounting Group, we believe that fundamental accounting practices and procedures will ensure the highest quality financial statements that lead to informed business decisions. Whether you are looking to obtain vendor credit, bank financing, investor funding or get a handle on profitability… we provide you and outside parties with reliable information to help move your business to the next level." → button **"Let's get you connected with a CFO today!"** linking to /contact.
+- **Chief Financial Officer (CFO) Services:** a two-column deliverables list — Full Balance Sheet reconciliations; P&L account sanity check; Arizona TPT process review & DOR ruling issuance; Monthly Arizona TPT filings; Monthly Internal CFO Summary Report; document processes & procedures; internal-controls assessment; KPIs; report optimization; insurance/risk review; merchant-services analysis; budget creation & tracking; Monthly Financial Close; bank financing & investor negotiations; audit/review prep & liaison; dashboards & benchmarking; trend analysis; accounting & supporting-software selection; cash-flow management & projections; board/investor presentations; contract & equipment financing.
+
+### 10.1 This is the best page on the site — make it the template
+It's the only page that delivers **specifics**: a real deliverables list and a clear, working CTA to the contact page. This is exactly the substance missing from the home page. Use this page's level of detail as the model for the others.
+
+### 10.2 Gaps and fixes
+- **The page is named "CFO & Controller Services" but only lists CFO services.** There's no distinct "Controller Services" section, so a visitor can't tell the difference between the two tiers (or where bookkeeping fits). Add a short Controller column/section and a one-line framing of who needs CFO vs. Controller vs. bookkeeping.
+- **Duplicate bullet:** "Budget Creation and Tracking" appears in *both* columns — remove one.
+- **Tax clarity (resolves the earlier flag):** the list includes "Monthly Arizona TPT filings" — i.e. you *do* handle Arizona transaction-privilege/sales tax. If you do **not** prepare income-tax returns, say so plainly somewhere (e.g. an FAQ line: "We handle Arizona TPT filings and coordinate with your CPA for income taxes; we don't prepare income-tax returns"). That distinction prevents mismatched expectations.
+- **Dense, unframed list:** 20+ bullets with no intro per group reads as a data dump. A one-sentence lead-in per section ("Each month you'll receive…") makes it scannable and reassuring.
+- **Copy edits:** "bench marking" → "benchmarking"; standardize bullet capitalization (mix of Title Case and sentence case — e.g. "Develop and Track Key metrics," "Bank Financing and Investor negotiations").
+- **Background video:** nice touch, but confirm it's muted, lightweight, and doesn't hurt load time on mobile/slow connections; provide a still-image fallback.
+- Same site-wide issues carry over: **empty meta description**, **footer phone links to Google Maps instead of `tel:`**, and **default Squarespace social accounts** still configured.
+
+---
+
+*Note: Sections 8–10 (Home, About Us, CFO & Controller Services) are based on the actual page source you provided. The remaining two pages (Startups & Small Business, Contact) were reconstructed from public search excerpts because the site blocks automated fetching — paste their HTML the same way and I'll verify those too. Once all pages are confirmed, I can draft rewritten copy in your brand voice.*
