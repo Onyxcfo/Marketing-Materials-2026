@@ -258,4 +258,31 @@ Like the CFO page, this delivers real specifics, a pricing expectation, and a wo
 
 ---
 
-*Note: Sections 8–11 (Home, About Us, CFO & Controller Services, Startups & Small Business) are all based on the actual page source you provided. Only the **Contact** page remains unverified (reconstructed from public info) — paste its HTML and I'll confirm it. Once it's in, I'm ready to draft rewritten copy in your brand voice, starting with a Team section and a tightened home page.*
+## 13. Contact page — verified findings (from the live source)
+
+Current structure and exact copy:
+- **Hero:** "CONTACT us" label + "Let us help you sleep at night."
+- **Contact us.** intro: "Use the form to tell us about your inquiry. To help us best serve your inquiry, we recommend that you first describe any specific issue(s) you're having before telling us what you want to achieve. You may also email or call us to make an appointment. Our general response time is one business day."
+- **LOCATION:** 14614 N Kierland Blvd Suite N220 Scottsdale, AZ 85254 · **OFFICE HOURS:** Monday–Friday | 8AM–5PM (*Usually available after hours and weekends*) · **CONTACT:** contact@onyxcfo.com · (480) 442-3119.
+- **Form:** Name, Business Name, Email, Phone, "Reason of Inquiry" (Startups & Small Business Packages / CFO Services / QuickBooks setup / Other), "How Can We Help?", and an SMS-consent checkbox → button **"LET'S CONNECT!"** Plus a linked **SMS Terms & Privacy Policy** PDF.
+
+### 13.1 This page is in good shape
+It's the most complete page on the site: real contact details, office hours, a one-business-day response expectation, an inquiry-routing form, and proper SMS-consent compliance. Keep it largely as-is.
+
+### 13.2 One real bug + small fixes
+- **Email link mismatch (fix this):** the page *displays* `contact@onyxcfo.com` but the link actually points to **`mailto:info@onyxcfo.com`**. Clicking it emails the wrong address. Point it to `contact@onyxcfo.com` (or whichever inbox is monitored).
+- **Footer phone** here still links to Google Maps instead of `tel:` (the in-body phone is correctly click-to-callable — only the footer is wrong, site-wide).
+- **Empty meta description** (same as every page).
+- Minor: "CONTACT us" capitalization; consider a general **confidentiality/data-security** line (you already have an SMS privacy PDF — a short note on how you protect financial data would round it out).
+
+---
+
+## 14. All pages verified — bottom line
+
+Every page in the nav (Home, About Us, CFO & Controller Services, Startups & Small Business, Contact) has now been reviewed against the live source. The cross-page summary in Section 12 stands, with one addition: **fix the Contact email link (shows `contact@`, links to `info@`).**
+
+The shape of the work is clear and encouraging: the **service and contact pages are genuinely good** (specific deliverables, pricing context, a solid contact form). The gaps are concentrated in **(1) no team/people anywhere, (2) a home page that doesn't surface the strong content that already exists elsewhere, (3) tone inconsistency, and (4) a handful of technical fixes** (email link, footer `tel:`, meta descriptions, default social accounts).
+
+---
+
+*Note: Sections 8–13 are all based on the actual page source you provided — the full site (all five nav pages) has now been verified. I'm ready to draft rewritten copy in your brand voice whenever you'd like, starting with a Team/About section and a tightened home page that pulls the strong service-page content forward.*
