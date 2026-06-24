@@ -101,17 +101,27 @@ I looked at comparable firms in two buckets:
 >
 > We work with founders and owners who are usually one of three places: under a deadline for a bank or year-end and needing books cleaned up; frustrated by a lack of financial information to make decisions; or simply unsure where to start. We build the foundation, keep it clean, and help you grow.
 
-**Meet the team** *(template — repeat per person. Use real titles/bios/credentials; confirm before publishing.)*
-> **[Steven Nikolov] — [Principal]**
-> [1–2 sentences: background, years of experience, the kinds of clients/work they lead, any credentials/CPA. LinkedIn link.]
+**Meet the team** *(roster + LinkedIn links confirmed by Onyx. LinkedIn blocks automated reading, so the bio sentence for each person needs to be pasted/filled — see §9. Titles below are from the internal master prompt; confirm each.)*
+
+> **Steven Nikolov — [Principal]** · [LinkedIn](https://www.linkedin.com/in/steven-nikolov-40051758/)
+> [1–2 sentences: background, years of experience, the work/clients he leads, any credentials.]
 >
-> **[Lisa Danforth] — [CFO]**
-> [Bio + LinkedIn.]
+> **Lisa Danforth — [CFO]** · [LinkedIn](https://www.linkedin.com/in/lisa-danforth/)
+> [Bio: reviews accountant work and ensures quality control across financial reporting; add background/credentials.]
 >
-> **[Cindi Campbell] — [Controller]**
-> [Bio + LinkedIn — e.g., leads complex, multi-entity books.]
+> **Cindi Campbell — [Controller]** · [LinkedIn](https://www.linkedin.com/in/cindi-campbell-0744792b/)
+> [Bio: manages sophisticated books and complex multi-entity clients; add background.]
 >
-> **[Add staff accountants / Chief of Staff as you see fit.]**
+> **Christine Johnson — [Staff Accountant]** · [LinkedIn](https://www.linkedin.com/in/christine-johnson-a7840b26b/)
+> [Bio: handles daily AP/AR and reconciliations for a large client load; add background.]
+>
+> **Valentina Dikova — [Staff Accountant]** · [LinkedIn](https://www.linkedin.com/in/valentina-dikova-29567815b/)
+> [Bio: recently joined the Onyx team; add role focus and background.]
+>
+> **Josephine Mack — [Chief of Staff]** · [LinkedIn](https://www.linkedin.com/in/josephinemack/)
+> [Bio: leads operations, billing, and workflow so client work runs smoothly; add background.]
+
+*(Note: your master prompt also lists Lisa Wojcik as a staff accountant — include or omit based on the current roster. The six people above match the LinkedIn profiles you provided.)*
 
 **Our values** *(from your master prompt — make them visible)*
 > **Clarity** — Organized, audit-ready work and plain-language answers.
@@ -194,7 +204,7 @@ I looked at comparable firms in two buckets:
 
 ## 9. What I need from you to finalize
 
-1. **Team:** confirmed names, titles, 1–2 line bios, credentials, headshots, and LinkedIn URLs.
+1. **Team:** names + LinkedIn URLs are in (see §4). Still needed — confirmed **titles**, a **1–2 line bio** per person (LinkedIn can't be read automatically, so paste each person's headline/About text or just tell me what to say), any **credentials**, and **headshots**.
 2. **Proof:** 2–4 client testimonials (first name + industry is fine) and any stat you can stand behind.
 3. **Scope confirmations:** exact tax language (TPT vs. income tax), onboarding timeline, whether you replace or augment an existing bookkeeper.
 4. **Pricing language:** confirm the flat-fee/hourly framing is how you want it stated publicly.
