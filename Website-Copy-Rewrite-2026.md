@@ -101,9 +101,9 @@ I looked at comparable firms in two buckets:
 >
 > We work with founders and owners who are usually one of three places: under a deadline for a bank or year-end and needing books cleaned up; frustrated by a lack of financial information to make decisions; or simply unsure where to start. We build the foundation, keep it clean, and help you grow.
 
-**Meet the team** *(bios drafted from your job descriptions — client-facing and ready to use. Add headshots. I deliberately did **not** state CPA/years-of-experience for anyone, since the JDs don't confirm them — add those per person if accurate, as they're strong trust signals.)*
+**Meet the team** *(bios drafted from your job descriptions — client-facing and ready to use. Just add headshots. Credentials/years aren't stated yet — when you have them, drop a credential after the name (e.g., "Lisa Danforth, CPA") or add a short "[X]+ years in…" clause to any bio; they're strong trust signals.)*
 
-> **Steven Nikolov — Founder & Principal** · [LinkedIn](https://www.linkedin.com/in/steven-nikolov-40051758/)
+> **Steven Nikolov — Founder, Principal & CFO** · [LinkedIn](https://www.linkedin.com/in/steven-nikolov-40051758/)
 > Steven founded Onyx to give growing businesses something most firms don't: a full accounting team led by a hands-on CFO. He works directly with key clients on financial strategy and advisory, and sets the standard for the precision and service the whole firm is known for.
 >
 > **Lisa Danforth — Chief Financial Officer** · [LinkedIn](https://www.linkedin.com/in/lisa-danforth/)
@@ -121,9 +121,9 @@ I looked at comparable firms in two buckets:
 > **Josephine Mack — Chief of Staff** · [LinkedIn](https://www.linkedin.com/in/josephinemack/)
 > As Chief of Staff, Josephine makes sure the client experience runs smoothly — coordinating onboarding, communications, billing, and the systems behind the scenes. She's the operational bridge between leadership and the accounting team.
 
-*Titling & disclosure notes to confirm:*
-- *Steven's full internal title is **Principal / CFO** and Lisa is also **CFO**. To avoid two "CFO" titles publicly, I set Steven as **Founder & Principal**. Change if you'd rather show both as CFO.*
-- *Valentina's job description references Bulgaria-based / cross-border operations. I described it as "international accounting experience" rather than naming an offshore team — decide how visible you want that to be publicly.*
+*Titling & disclosure — decided:*
+- *Both Steven and Lisa carry **CFO** publicly (Steven as Founder, Principal & CFO; Lisa as CFO).*
+- *Valentina's bio stays as "international accounting experience"; we are **not** highlighting that she is outside the country.*
 
 **Our values** *(from your master prompt — make them visible)*
 > **Clarity** — Organized, audit-ready work and plain-language answers.
@@ -206,7 +206,7 @@ I looked at comparable firms in two buckets:
 
 ## 9. What I need from you to finalize
 
-1. **Team:** ✅ bios drafted from your job descriptions (see §4). Remaining: **headshots**, optional **credentials/years** per person (only if accurate), and confirm the **two titling/disclosure notes** (Steven's title; how visible to make the international team).
+1. **Team:** ✅ bios finalized, titles set (both Steven & Lisa show CFO), disclosure settled. Remaining: **headshots** and optional **credentials/years** to add later when available.
 2. **Proof:** 2–4 client testimonials (first name + industry is fine) and any stat you can stand behind.
 3. **Scope confirmations:** exact tax language (TPT vs. income tax), onboarding timeline, whether you replace or augment an existing bookkeeper.
 4. **Pricing language:** confirm the flat-fee/hourly framing is how you want it stated publicly.
