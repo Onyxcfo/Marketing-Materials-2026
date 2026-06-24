@@ -194,22 +194,61 @@ I looked at comparable firms in two buckets:
 
 **Meta description:** `Common questions about working with Onyx Accounting Group — pricing, software, onboarding, and how we work alongside your tax preparer.`
 
-> **How is your pricing structured?** Most clients are on a flat monthly fee based on scope and number of accounts; some work is hourly or project-based (like cleanup). We'll quote clearly before any engagement.
-> **What software do you use?** We work in QuickBooks Online and Desktop, with [Bill.com / your AP tools] and secure document sharing.
-> **Do you prepare taxes?** We handle [Arizona TPT/sales-tax filings] and keep your books tax-ready, and we coordinate with your CPA or tax preparer for income-tax returns. *(Confirm/adjust to your exact scope.)*
-> **Do you replace our current bookkeeper or work alongside them?** [Confirm your standard answer.]
-> **How fast is onboarding?** [Typical timeline — e.g., "most clients are up and running within [X] weeks."]
-> **Where are you located / who do you serve?** Scottsdale, AZ, serving clients nationwide.
-> **How do you protect our financial data?** [Short note: secure file sharing, password management, access controls.]
+*(Draft answers below are built from your master prompt and job descriptions. Each one marked **[confirm]** needs a quick yes/tweak before publishing.)*
+
+> **How is your pricing structured?**
+> Most clients are on a flat monthly fee based on scope and the number of accounts involved. Some work — like a one-time cleanup or setup — is priced as a project or hourly. You'll always get a clear quote before any engagement begins. *[confirm — matches your hybrid flat-fee/hourly model]*
+>
+> **What software do you use?**
+> We work primarily in QuickBooks Online (and Desktop when needed), with Bill.com for accounts payable and secure, access-controlled document sharing. Behind the scenes we use Karbon to manage workflow so deliverables and deadlines stay on track. *[confirm which tools you want named publicly]*
+>
+> **Do you prepare taxes?**
+> We keep your books accurate and tax-ready, and we handle Arizona TPT (transaction privilege / sales tax) filings. We do **not** prepare income-tax returns — instead we coordinate directly with your CPA or tax preparer so they have clean, reconciled books at year-end. *[confirm — your master prompt says Onyx does not file taxes; this states that clearly while noting the TPT work you do]*
+>
+> **Do you replace our current bookkeeper, or work alongside our team?**
+> Either. We can take over your books entirely, or work alongside an in-house bookkeeper and your CPA — whatever fits your business. *[confirm your standard answer]*
+>
+> **How quickly can we get started?**
+> Most clients are onboarded within [2–4 weeks], depending on the state of the books and the scope of work. *[confirm typical timeline]*
+>
+> **Where are you located, and who do you serve?**
+> We're based in Scottsdale, Arizona, and serve clients nationwide — from startups and service businesses to real estate holding companies and multi-entity organizations.
+>
+> **How do you protect our financial data?**
+> Your information is handled through secure, access-controlled document sharing and a managed password system, with access limited to the team members working on your account. *[confirm — reflects your Dropbox / 1Password practices without over-disclosing]*
+
+---
+
+## 8b. Sample testimonials — DRAFT TEMPLATES (do not publish as-is)
+
+> ⚠️ **Important:** These are **illustrative drafts** written to match your ideal-client types — they are **not** real client quotes. Don't publish any of them attributed to a real person until that client has reviewed and approved the wording (or given you their own). The cleanest path: send a happy client this draft as a starting point and let them edit/approve, or ask them 2–3 short questions (below) and quote their real answer.
+
+**Draft 1 — multi-entity / real estate**
+> "We have several entities, and our books used to be a constant source of stress. Onyx took it over, cleaned everything up, and now I get clear financials every month without chasing anyone. It's the first time I've actually felt on top of it."
+> — [First name], [Real estate holding company]
+
+**Draft 2 — startup / first-time setup**
+> "As a first-time founder I had no idea how to set up my books. Onyx walked me through it, got QuickBooks running properly, and gave me a foundation I could actually grow on."
+> — [First name], [Startup / industry]
+
+**Draft 3 — growing business moving up to CFO support**
+> "We outgrew basic bookkeeping and needed real financial guidance before talking to our bank. Having a CFO and a full team on our side — instead of one overwhelmed bookkeeper — made all the difference."
+> — [First name], [Service business / industry]
+
+**To collect real ones quickly, ask a client three questions:**
+1. What was going on before you started working with us?
+2. What's different now?
+3. Would you recommend us, and to whom?
+*Their answers, lightly tightened, make the most believable testimonials — far stronger than anything written for them.*
 
 ---
 
 ## 9. What I need from you to finalize
 
 1. **Team:** ✅ bios finalized, titles set (both Steven & Lisa show CFO), disclosure settled. Remaining: **headshots** and optional **credentials/years** to add later when available.
-2. **Proof:** 2–4 client testimonials (first name + industry is fine) and any stat you can stand behind.
-3. **Scope confirmations:** exact tax language (TPT vs. income tax), onboarding timeline, whether you replace or augment an existing bookkeeper.
-4. **Pricing language:** confirm the flat-fee/hourly framing is how you want it stated publicly.
+2. **Proof:** draft testimonial templates are in §8b — replace with **real, client-approved** quotes (use the 3-question method) and add any **stat** you can stand behind.
+3. **FAQ confirmations:** draft answers are in §8 — just confirm/tweak the **[confirm]** flags (pricing, software to name, tax scope, replace-vs-augment, onboarding timeline, data security).
+4. **Visuals:** team **headshots** and (optional) real **team/office photography** to replace the Squarespace stock images.
 
 Once those are in, every `[bracket]` resolves and the copy is ready to paste into Squarespace.
 
