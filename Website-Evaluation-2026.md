@@ -167,4 +167,26 @@ The bones are fine and the contact form is good. But the page is **all clever fr
 
 ---
 
-*Note: Section 8 is based on the actual home-page source you provided. The other pages (About Us, CFO & Controller Services, Startups & Small Business, Contact) were reconstructed from public search excerpts because the site blocks automated fetching — paste their HTML the same way and I'll verify those too and draft rewritten copy.*
+## 9. About Us page — verified findings (from the live source)
+
+Current structure and exact copy:
+- **Hero:** "ABOUT US" label + "A NEW TYPE OF ACCOUNTING FIRM" (identical headline to the home page).
+- **WHO WE ARE:** "Onyx Accounting Group is an accounting firm specializing in Chief Financial Officer (CFO) and Controller services with the ability to perform daily bookkeeping and staff level accounting services, from the seed of an idea to the ongoing maintenance… We bring extensive top 10 firm experience and professionalism to every client… We have been practicing for over a decade and have a variety of private industry experience." Followed by three client-pain quotes: *under deadline pressure for a bank or tax return needing books cleaned up; frustrated by lack of financial information for decisions; don't know where to start setting up their books.*
+- **HISTORY:** "Onyx Accounting Group was founded when a Director at a national top 10 accounting firm realized the overall accounting industry was stuck in the mud… accountant's aren't a creative bunch… The bridge between knowing your books and completing your taxes simply wasn't being built."
+- **Closing band + footer:** identical to the home page.
+
+### 9.1 The big one: still no people
+This confirms the #1 recommendation. The About page is the natural home for the team, yet it names **no one** — not the founding "Director," not the current leadership, no bios, no photos, no LinkedIn links. For a "look us up" visitor this is the most important missing element on the whole site. Add named leadership with short bios, credentials, and headshots here first.
+
+### 9.2 Tone is actually better here — make it the model
+The "WHO WE ARE" copy is calmer and more professional than the home page's analogy stack. Use *this* register as the standard when you rework the home page.
+
+### 9.3 Specific issues
+- **Repetition:** the hero headline and the closing band are copied verbatim from the home page. About Us should add depth (the team, the story, credentials), not repeat the home hero.
+- **Unverifiable credibility claims:** "extensive top 10 firm experience," "over a decade," "private industry experience" are good selling points — but they're stronger attached to a *named* person ("Steven brings X years from [firm]…") than stated by an anonymous firm.
+- **Tax ambiguity:** the History line "the bridge between knowing your books and completing your taxes" implies tax work, and one client quote references "a bank or tax return." If Onyx does **not** file taxes, tighten this so a reader doesn't expect tax prep — or state clearly how you coordinate with their tax preparer.
+- **Copy edits (verbatim):** "start up" → "startup"; "private industry experience ." (space before the period); "accountant's aren't" → "accountants aren't"; "informed/ timely" (space after slash); and the same trailing-space + duplicated closing-line issues carried over from the home page.
+
+---
+
+*Note: Sections 8–9 (Home and About Us) are based on the actual page source you provided. The remaining pages (CFO & Controller Services, Startups & Small Business, Contact) were reconstructed from public search excerpts because the site blocks automated fetching — paste their HTML the same way and I'll verify those too. Once all pages are confirmed, I can draft rewritten copy in your brand voice.*
