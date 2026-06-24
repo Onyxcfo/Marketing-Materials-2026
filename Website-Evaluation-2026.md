@@ -44,7 +44,13 @@ For a firm of ~1–10 people whose product is *trust in your numbers*, the team 
 - LinkedIn links for each person. This alone materially raises credibility for a "look us up" visitor, because that's exactly what they'll do next.
 
 ### 3.3 Voice & tone don't match your stated brand
-Your brand voice is **warm, professional, organized, no jargon, deliver confidence/clarity/trust.** The "pilot flying the plane and serving cocktails" line is memorable but reads as casual/cute and slightly knocks competitors. Keep *one* plain-language analogy if you like it, but lead with the confident, reassuring tone you've defined. Rewrite page copy to that standard.
+Your brand voice is **warm, professional, organized, no jargon, deliver confidence/clarity/trust.** The live home page leans the other way — it stacks up *four* jokey analogies in a row:
+- "like having your pilot try to fly the plane and serve your cocktails at the same time"
+- "Accounting is a little bit like the Wild West… small bookkeepers on every corner understand financials as much as they understand Astrophysics (yikes!)"
+- "you might as well try to drive through a rainstorm without windshield wipers"
+- plus fear-based framing ("how fraud occurs and how you get audited," "risk liabilities building up and fear of an audit")
+
+Individually these are fine; stacked together they read as gimmicky and a little anxious, and the jab at "small bookkeepers on every corner" knocks the very peers a referral source might also know. For a due-diligence visitor, calm competence beats cleverness. Keep at most **one** light analogy, drop the fear-bait, and lead with the confident, reassuring tone you've defined.
 
 ### 3.4 Thin content with no proof
 Pages are short and assertion-only ("affordable," "unique approach," "we know what bankers want") with nothing backing them up. Add concrete substance:
@@ -131,4 +137,34 @@ Contact         → form, phone (click-to-call), address, hours
 
 ---
 
-*Note: I was unable to fetch the live pages directly (the site blocks automated access and the environment's network policy denied the request), so the specific wording above was reconstructed from public search excerpts of the site. Before implementing, do a quick read-through of the live pages to confirm exact current copy — but the structural and accuracy issues identified here will hold regardless.*
+## 8. Home page — verified findings (from the live source)
+
+The full home-page source was reviewed directly. Current structure and exact copy:
+
+- **Nav:** Home · About Us · CFO & Controller Services · Startups & Small Business Services · Contact · **CALL US** button
+- **Hero:** "A NEW TYPE OF ACCOUNTING FIRM" / sub: "We help you understand your books and grow your business."
+- **Section "Lesson's Learned by Onyx Accounting Group"** — six text blocks: *Don't be stuck with 1 Accountant; Big FIRM Quality, Small Firm PRICE; Truly Understand YOUR BOOKS; Preparing You For The Next Steps; Setup Your Books Correctly From The Start; Efficiencies That Save You Time & Money.*
+- **Contact band:** "Reach Out Now & Start Sleeping Better." + form (Name, Business Name, Email, Phone, "What keeps you up at night?") → button "LET'S CONNECT!"
+- **Closing line:** "Onyx Accounting Group believes that what makes a business thrive is monitoring the fundamentals and having a passion for what you do."
+- **Footer:** phone · contact@onyxcfo.com · 14614 N Kierland Blvd Suite N220, Scottsdale, AZ 85254 · QuickBooks logo · "Registered in Arizona"
+
+### 8.1 Copy edits to make now (verbatim fixes)
+- **"Lesson's Learned"** → **"Lessons Learned"** (apostrophe error, and it's in a prominent heading).
+- **"provides an unique approach"** → **"a unique approach."**
+- **Inconsistent heading capitalization:** "Big FIRM Quality, Small Firm PRICE" and "EFFICIENCIES THAT SAVE YOU Time & MONEY" mix cases mid-phrase. Pick one style (Title Case or sentence case) and apply it to all six.
+- Trailing stray spaces at the end of a couple of blocks; tighten.
+
+### 8.2 Technical / SEO issues (found in the page source)
+- **Empty meta description** (`<meta name="description" content="">`). This is the snippet Google and link-previews show when someone looks you up — it should be a clear one-line description, e.g. *"Onyx Accounting Group — bookkeeping, controller, and fractional CFO services for growing businesses. Based in Scottsdale, AZ; serving clients nationwide."*
+- **Page `<title>` is just "Onyx Accounting Group."** Add a descriptor: *"Onyx Accounting Group | Bookkeeping & Fractional CFO Services — Scottsdale, AZ."*
+- **Footer phone number links to a Google Maps URL**, not a click-to-call link. It should be `tel:+14804423119` so mobile visitors can tap to call (the header "CALL US" button is correctly set up — just the footer is wrong).
+- **Default Squarespace social accounts are still configured** (instagram.com/squarespace, youtube.com/squarespace, facebook.com/squarespace). They're hidden today, but replace them with your real profiles (or remove them) before you ever turn social icons on.
+- **Stock demo imagery:** the "Lessons Learned" section still uses Squarespace's default stock photos. Swap for real team/office photography when you do the team update.
+- **Heading hierarchy:** the section title is an `<h4>` while the six items below it are `<h2>` — backwards semantically. Minor, but worth fixing for SEO/accessibility when copy is reworked.
+
+### 8.3 Net read of the home page
+The bones are fine and the contact form is good. But the page is **all clever framing and no substance** — six analogy-driven "lessons," then a form. A visitor still can't answer "who are these people, exactly what do they do for me each month, and can I trust them with my books?" Replace two or three of the analogy blocks with: a plain services summary, a line or two of proof (a testimonial or a result), and a pointer to the team. That single change does more for credibility than anything else on the page.
+
+---
+
+*Note: Section 8 is based on the actual home-page source you provided. The other pages (About Us, CFO & Controller Services, Startups & Small Business, Contact) were reconstructed from public search excerpts because the site blocks automated fetching — paste their HTML the same way and I'll verify those too and draft rewritten copy.*
