@@ -1,0 +1,154 @@
+<title>Onyx — 2026 Arizona Financial Deadlines (handout mockup)</title>
+<style>
+  :root{
+    --onyx:#1A1A1C;
+    --ink:#33323A;
+    --paper:#F3EFE7;
+    --paper-edge:#E7E0D2;
+    --brass:#B0894F;
+    --brass-deep:#8C6A38;
+    --rule:#C9C0AE;
+    --soft:#6f6a5f;
+    --surface:#26262A;
+    --serif: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:radial-gradient(120% 90% at 50% -10%, #2f2f34 0%, var(--surface) 60%, #1d1d20 100%);
+    font-family:var(--sans);color:var(--ink);padding:48px 20px 64px;
+  }
+  .intro{max-width:680px;margin:0 auto 40px;text-align:center;color:#D9D3C6;}
+  .intro .eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--brass);margin:0 0 14px;}
+  .intro h1{font-family:var(--serif);font-weight:600;color:#F3EFE7;font-size:23px;line-height:1.35;margin:0 0 12px;text-wrap:balance;}
+  .intro p{font-size:14px;line-height:1.6;margin:0 auto;max-width:60ch;color:#B9B2A4;}
+
+  .stage{display:flex;justify-content:center;}
+
+  .card{
+    width:5in;height:7in;
+    background:linear-gradient(180deg, var(--paper) 0%, #EFEAE0 100%);
+    border:1px solid var(--paper-edge);border-radius:6px;
+    box-shadow:0 1px 0 rgba(255,255,255,.4) inset, 0 26px 50px -18px rgba(0,0,0,.65);
+    padding:0.46in 0.44in 0.4in;position:relative;display:flex;flex-direction:column;
+  }
+  .card::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;
+    background:linear-gradient(90deg,var(--brass-deep),var(--brass) 45%,#D8BC85 75%,var(--brass));border-radius:6px 6px 0 0;}
+
+  .kicker{font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--brass-deep);margin:0 0 8px;}
+  .card h2{font-family:var(--serif);font-weight:600;color:var(--onyx);font-size:24px;line-height:1.12;margin:0 0 4px;letter-spacing:-.01em;text-wrap:balance;}
+  .card .sub{font-size:11.5px;color:var(--soft);margin:0 0 14px;font-style:italic;}
+
+  /* recurring TPT banner */
+  .banner{
+    display:flex;align-items:center;gap:11px;background:var(--onyx);color:var(--paper);
+    border-radius:5px;padding:11px 13px;margin:0 0 16px;
+  }
+  .banner .big{font-family:var(--serif);font-weight:600;font-size:21px;color:#E8C98C;line-height:1;font-variant-numeric:tabular-nums;}
+  .banner .tx{font-size:11px;line-height:1.35;}
+  .banner .tx b{color:#fff;letter-spacing:.02em;}
+
+  /* month grid */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:0 0 15px;}
+  .mo{
+    border:1px solid var(--rule);border-radius:4px;padding:7px 8px 8px;min-height:64px;
+    display:flex;flex-direction:column;gap:3px;background:rgba(255,255,255,.4);
+  }
+  .mo.active{border-color:var(--brass-deep);background:rgba(176,137,79,.09);}
+  .mo .mn{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);font-weight:700;}
+  .mo .ev{font-size:10px;line-height:1.28;color:var(--onyx);display:flex;gap:5px;align-items:flex-start;}
+  .mo .ev .d{flex:0 0 auto;width:5px;height:5px;border-radius:50%;background:var(--brass);margin-top:4px;}
+  .mo .none{font-size:9.5px;color:#a89f8c;font-style:italic;margin-top:1px;}
+  .mo .dt{font-variant-numeric:tabular-nums;font-weight:700;color:var(--brass-deep);}
+
+  .legend{font-size:9.5px;color:var(--soft);line-height:1.5;margin:0 0 14px;border-top:1px solid var(--rule);padding-top:9px;}
+  .legend b{color:var(--onyx);}
+
+  .foot{margin-top:auto;border-top:1.5px solid var(--onyx);padding-top:12px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;}
+  .foot .pitch{font-family:var(--serif);font-style:italic;font-size:12px;line-height:1.4;color:var(--onyx);margin:0 0 8px;text-wrap:balance;}
+  .foot .name{font-family:var(--serif);font-weight:600;font-size:15px;color:var(--onyx);line-height:1;}
+  .foot .name b{color:var(--brass-deep);}
+  .foot .ln{font-size:10px;color:var(--ink);line-height:1.7;font-variant-numeric:tabular-nums;margin-top:6px;}
+  .foot .ln b{color:var(--brass-deep);}
+  .foot .qr{flex:0 0 auto;width:70px;height:70px;border:1.5px dashed var(--brass-deep);border-radius:6px;
+    display:flex;align-items:center;justify-content:center;text-align:center;font-size:7.5px;letter-spacing:.06em;
+    text-transform:uppercase;color:#8c856f;line-height:1.35;padding:5px;}
+
+  .note{max-width:680px;margin:40px auto 0;text-align:center;color:#8e887b;font-size:11.5px;line-height:1.6;}
+  .note code{color:#cdbfa0;font-family:var(--sans);}
+  .printbtn{display:block;margin:26px auto 0;background:var(--brass);color:#1d1a14;border:0;font-family:var(--sans);
+    font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:11px 20px;border-radius:6px;cursor:pointer;}
+  .printbtn:hover{background:#c79a59;}
+  .printbtn:focus-visible{outline:2px solid #F3EFE7;outline-offset:3px;}
+
+  @media (max-width:520px){.card{width:92vw;height:auto;aspect-ratio:5/7;padding:24px 20px;}}
+  @media print{body{background:#fff;padding:0;}.intro,.note,.printbtn{display:none;}.card{box-shadow:none;border:1px solid #ccc;border-radius:0;}}
+</style>
+
+<div class="intro">
+  <p class="eyebrow">Handout mockup · Concept D of 4</p>
+  <h1>2026 Arizona Financial Deadlines</h1>
+  <p>A year-round desk card — the highest keep-rate option, and useful to a banker and their clients alike. Same onyx-and-brass identity as Concept A so the two read as a set. Dates shown are the standard recurring deadlines; verify exact days (weekend/holiday shifts) before printing.</p>
+</div>
+
+<div class="stage">
+  <article class="card" aria-label="Arizona financial deadlines card">
+    <p class="kicker">A desk reference from Onyx Accounting Group</p>
+    <h2>2026 Financial Deadlines</h2>
+    <p class="sub">Key dates for Arizona business owners.</p>
+
+    <div class="banner">
+      <span class="big">20<span style="font-size:11px;vertical-align:super;">th</span></span>
+      <span class="tx"><b>Arizona TPT / sales tax — every month.</b><br>File &amp; pay by the 20th for the prior month's activity.</span>
+    </div>
+
+    <div class="grid">
+      <div class="mo active"><span class="mn">Jan</span>
+        <span class="ev"><span class="d"></span><span><span class="dt">15</span> · Q4 estimated tax</span></span>
+        <span class="ev"><span class="d"></span><span><span class="dt">31</span> · W-2s &amp; 1099-NEC</span></span>
+      </div>
+      <div class="mo"><span class="mn">Feb</span><span class="none">TPT only</span></div>
+      <div class="mo active"><span class="mn">Mar</span>
+        <span class="ev"><span class="d"></span><span><span class="dt">15</span> · S-corp &amp; partnership returns</span></span>
+      </div>
+      <div class="mo active"><span class="mn">Apr</span>
+        <span class="ev"><span class="d"></span><span><span class="dt">15</span> · C-corp &amp; individual returns</span></span>
+        <span class="ev"><span class="d"></span><span><span class="dt">15</span> · Q1 estimated tax</span></span>
+      </div>
+      <div class="mo active"><span class="mn">May</span>
+        <span class="ev"><span class="d"></span><span><span class="dt">15</span> · Nonprofit returns</span></span>
+      </div>
+      <div class="mo active"><span class="mn">Jun</span>
+        <span class="ev"><span class="d"></span><span><span class="dt">15</span> · Q2 estimated tax</span></span>
+      </div>
+      <div class="mo"><span class="mn">Jul</span><span class="none">TPT only</span></div>
+      <div class="mo"><span class="mn">Aug</span><span class="none">TPT only</span></div>
+      <div class="mo active"><span class="mn">Sep</span>
+        <span class="ev"><span class="d"></span><span><span class="dt">15</span> · Q3 estimated tax</span></span>
+        <span class="ev"><span class="d"></span><span><span class="dt">15</span> · S-corp/p'ship extension</span></span>
+      </div>
+      <div class="mo active"><span class="mn">Oct</span>
+        <span class="ev"><span class="d"></span><span><span class="dt">15</span> · C-corp/individual extension</span></span>
+      </div>
+      <div class="mo"><span class="mn">Nov</span><span class="none">TPT only</span></div>
+      <div class="mo active"><span class="mn">Dec</span>
+        <span class="ev"><span class="d"></span><span>Year-end planning &amp; books close</span></span>
+      </div>
+    </div>
+
+    <p class="legend"><b>Good to know:</b> TPT is filed monthly unless the AZ Dept. of Revenue assigns you a quarterly or annual schedule. Estimated-tax and return dates that fall on a weekend or holiday move to the next business day. This card is a general guide, not tax advice.</p>
+
+    <div class="foot">
+      <div>
+        <p class="pitch">We keep clients ahead of every date on this card.</p>
+        <span class="name">ONYX <b>Accounting Group</b></span>
+        <div class="ln"><b>P</b> (480) 442-3119 · <b>W</b> onyxcfo.com</div>
+      </div>
+      <div class="qr">QR →<br>onyxcfo.com</div>
+    </div>
+  </article>
+</div>
+
+<button class="printbtn" onclick="window.print()">Print / Save as PDF</button>
+<p class="note">Concept D of four in <code>Banker-Handout-Concepts-2026.md</code>. Best used as a year-round bonus alongside Concept A. Swap in the real logo, confirm brand hex/fonts, point the QR at its destination, and <b>verify all 2026 dates</b> before print.</p>
