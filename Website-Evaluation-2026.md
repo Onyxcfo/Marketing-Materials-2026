@@ -11,8 +11,8 @@
 
 The site is clean and loads fine, but it reads as **out of date and inconsistent with who Onyx is today.** For a "look us up" site, the single most important quality is that everything a visitor finds is *accurate, current, and consistent* with what they hear from you directly. Right now there are several gaps that would make a careful visitor hesitate:
 
-- The site brands as **"Onyx Accounting Group"**, while your current identity (per your master prompts) is **"Onyx | Bookkeeping & CFO Services."**
-- The About story ("founded when a Director at a national top-10 firm realized the industry was stuck in the mud") **does not reflect your current leadership and team.**
+- **Brand name is consistent on the site** — "Onyx Accounting Group" is correct. Note for cleanup: your *internal/marketing master prompts* call the firm "Onyx | Bookkeeping & CFO Services," so align those documents (and any email signatures) to the official "Onyx Accounting Group" name.
+- The About story ("founded when a Director at a national top-10 firm realized the industry was stuck in the mud") should be checked to confirm it **names your current leadership and team** — the live page currently tells the story without naming any people.
 - There are **no named team members, no photos, no LinkedIn links** — the #1 trust signal for a firm this size is missing.
 - The tone in places (the "pilot flying the plane and serving cocktails" analogy) is **more jokey than your stated brand voice** of warm, professional, clear, and confident.
 - Content is **thin** — a handful of short pages with no proof, no specifics, and no reason to believe.
@@ -32,9 +32,10 @@ None of this is hard to fix. The work is mostly *content and accuracy*, which is
 
 ## 3. Content issues (the main event)
 
-### 3.1 Brand & identity are inconsistent — fix first
-- Site name: **"Onyx Accounting Group"** vs. your current **"Onyx | Bookkeeping & CFO Services."** Pick one canonical name and make the entire site, LinkedIn, and email signatures match. Inconsistent naming is the first thing that makes someone doing due diligence wonder if they're looking at the right company or an abandoned site.
-- The **About origin story** references an unnamed "Director at a national top-10 firm." Your master prompt describes a specific, credible leadership team (Steven Nikolov – Principal; Lisa Danforth – CFO; Cindi Campbell – Controller; plus the accounting team and Chief of Staff). The site should tell *that* story with *those* people.
+### 3.1 Brand name — the site is right; align your other docs
+- The official firm name is **"Onyx Accounting Group,"** and the website uses it correctly. No change needed on the site.
+- For consistency in due diligence, make sure everything *else* matches: your internal/marketing master prompts currently say "Onyx | Bookkeeping & CFO Services," and LinkedIn, email signatures, and any directory listings should all read "Onyx Accounting Group."
+- The **About origin story** references an unnamed "Director at a national top-10 firm." Whether or not that's literally your founding story, the page would be far stronger if it *named* your leadership — Steven Nikolov (Principal), Lisa Danforth (CFO), Cindi Campbell (Controller), and the rest of the team. People doing due diligence want to see who's behind the firm.
 
 ### 3.2 No team = the biggest single gap
 For a firm of ~1–10 people whose product is *trust in your numbers*, the team is the website. Right now a visitor can't see who would actually handle their books or who's accountable. Add:
@@ -74,7 +75,7 @@ Well-regarded small bookkeeping / fractional-CFO firms (the tier you're benchmar
 | **Specific deliverables / what you get monthly** | Vague | High |
 | **Social proof (testimonials, logos, results)** | None | High |
 | **Clear service tiers & pricing approach** | Categories exist, no detail | Medium |
-| **Consistent brand & current info** | Inconsistent / stale | **High** |
+| **Consistent brand & current info** | Name is correct; content thin/dated | Medium |
 | **Trust/security & process transparency** | Missing | Medium |
 | Clean, professional design | Yes | Low — you're fine here |
 
@@ -96,7 +97,7 @@ You don't need a redesign. A few light touches would modernize it:
 ## 6. Prioritized action list
 
 **Quick wins (1–2 weeks, high impact, content-only)**
-1. Reconcile the **brand name** everywhere (site, LinkedIn, signatures).
+1. Align the **brand name** in your internal/marketing docs, LinkedIn, and signatures to match the site's official "Onyx Accounting Group" (the site itself is already correct).
 2. Rewrite the **About page** with the real leadership team, bios, headshots, and LinkedIn links.
 3. Pass all copy through your **brand-voice standard** (warm, professional, clear, confident) and remove anything stale or off-tone.
 4. Add **2–4 testimonials** and an "industries we serve" section.
