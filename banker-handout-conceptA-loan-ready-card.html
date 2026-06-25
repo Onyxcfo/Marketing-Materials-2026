@@ -5,8 +5,8 @@
     --ink:#33323A;          /* slightly violet-grey, chosen not default */
     --paper:#F3EFE7;        /* warm card stock */
     --paper-edge:#E7E0D2;
-    --brass:#B0894F;        /* muted antique brass accent */
-    --brass-deep:#8C6A38;
+    --brass:#EBBC79;        /* muted antique brass accent */
+    --brass-deep:#9A6F2E;
     --rule:#C9C0AE;
     --surface:#26262A;      /* the "desk" the cards sit on */
     --serif: Georgia, "Iowan Old Style", "Times New Roman", serif;
@@ -55,7 +55,7 @@
   }
   .card::before{ /* thin brass top frame */
     content:"";position:absolute;left:0;right:0;top:0;height:5px;
-    background:linear-gradient(90deg,var(--brass-deep),var(--brass) 45%,#D8BC85 75%,var(--brass));
+    background:linear-gradient(90deg,var(--brass-deep),var(--brass) 45%,#F4D49E 75%,var(--brass));
     border-radius:6px 6px 0 0;
   }
 
@@ -152,7 +152,7 @@
     font-family:var(--sans);font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;
     padding:11px 20px;border-radius:6px;cursor:pointer;
   }
-  .printbtn:hover{background:#c79a59;}
+  .printbtn:hover{background:#f1cd92;}
   .printbtn:focus-visible{outline:2px solid #F3EFE7;outline-offset:3px;}
 
   @media (max-width:520px){
