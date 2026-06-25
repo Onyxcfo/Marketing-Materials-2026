@@ -283,3 +283,47 @@ The shape of the work is clear and encouraging: the **service and contact pages 
 ---
 
 *Note: Sections 8–13 are all based on the actual page source you provided — the full site (all five nav pages) has now been verified. I'm ready to draft rewritten copy in your brand voice whenever you'd like, starting with a Team/About section and a tightened home page that pulls the strong service-page content forward.*
+
+---
+
+## 15. Layout & design direction (added by request)
+
+This section is about *structure and visual treatment*, not copy — how the pages are built and laid out, plus a color/palette direction.
+
+### 15.1 The biggest layout issue: dark photo-overlay heroes
+Every page opens with a stock photo under a 40–70% dark scrim with centered text on top. That "dim-photo-with-text" treatment is the clearest tell of an aging template. **Modern, calmer alternatives:**
+- A **solid or subtly textured color band** (onyx, or a warm neutral) with strong typography and generous white space — no photo needed.
+- A **duotone** treatment of a real photo (tinted to your palette) instead of a literal stock image under a gray scrim.
+- A **split hero**: type and CTA on one side, a single high-quality image or the team photo on the other.
+Either way: lighter, higher-contrast, fewer competing centered blocks.
+
+### 15.2 Recommended home-page layout (in order)
+The current home page is hero → six analogy text blocks → form → band. Replace with a scannable, card-based flow:
+1. **Hero** — one-line value prop + one button ("Talk to our team"). Solid/duotone, not photo-scrim.
+2. **Trust strip** — a thin band: "Scottsdale-based · serving clients nationwide · QuickBooks-based" (and client logos or a stat once you have them).
+3. **Services — three cards** (Bookkeeping · Controller · Fractional CFO), each a short blurb + link. This is the ROI-ladder competitors use, in a scannable grid.
+4. **"Why a team beats a solo bookkeeper"** — one focused section (your differentiator).
+5. **Who we serve** — four quick categories (real estate / multi-entity / startups / service businesses).
+6. **Team preview** — 3–4 headshots with a link to the full About page.
+7. **Proof** — testimonials once gathered.
+8. **Closing CTA** — the "sleep better" line + form.
+
+### 15.3 Layout patterns to apply site-wide
+- **Consistent section rhythm:** alternate two background treatments (warm neutral / onyx) for clear visual sectioning instead of a different stock photo per block.
+- **Real type hierarchy:** one H1 per page, consistent H2/H3 scale, left-aligned body (the site centers almost everything, which hurts scannability and reads dated). Reserve centering for short headers.
+- **Cards over walls of text:** services and packages as cards/tiles with clear headings (your service pages currently use styled paragraphs as headings — make them real headings).
+- **Team grid:** photo + name + title + one line, in a responsive grid (this page doesn't exist yet — it's the #1 add).
+- **A real footer:** nav, address, click-to-call phone, email, LinkedIn icons, and the current year — the site currently has only a thin contact line.
+- **Sticky, simple header:** logo left, nav right, one "Call us" button (already close to this — keep it).
+- **Mobile:** single-column, generous tap targets, click-to-call phone, form fields easy to thumb.
+
+### 15.4 Color & palette direction
+- **Keep onyx black as the anchor** — it's timeless and on-brand for the name. Don't lose it.
+- **Swap pure white for a warm off-white** (e.g., a paper neutral) so the site feels current rather than stark.
+- **Commit to ONE deliberate accent, used sparingly.** The site currently leans on a **gray-blue**, which is professional but *generic* for finance — nearly every CPA/bank uses it, and a desaturated blue + gray can feel cold and flat.
+  - **Option A — enrich the blue:** move from a muted gray-blue to a deeper **ink-navy or teal-blue** with more depth; keeps the trust signal but feels less default.
+  - **Option B — blue + warm metallic:** pair the blue with a restrained **brass/gold** as a secondary (the combination in the banker handouts). Blue + brass is a classic "premium finance" pairing that still reads current.
+  - Either way, define exact hex values and use the accent intentionally (one or two elements per section), not as a wash.
+- **Cut the heavy photo overlays** — they muddy whatever palette you choose. Solid color blocks let the palette read cleanly.
+
+*To make this concrete: if you share your current blue/gray hex values (or the logo colors), I can hand you a refreshed palette — onyx + warm neutral + a defined accent — with exact hex codes ready for Squarespace, plus a simple home-page wireframe.*
