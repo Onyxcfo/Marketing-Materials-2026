@@ -1,0 +1,360 @@
+<title>Onyx Accounting Group — home page redesign mockup</title>
+<style>
+  :root{
+    --onyx:#17171A;
+    --onyx-soft:#23232a;
+    --paper:#FAF7F1;          /* warm off-white ground */
+    --paper-2:#F1EBDF;        /* slightly deeper warm band */
+    --ink:#3A3A42;            /* warm-grey body text */
+    --navy:#9A6F2E;           /* remapped: deep gold, derived from brand #EBBC79 for legible text/buttons */
+    --navy-2:#7d5a24;
+    --brass:#EBBC79;          /* OFFICIAL brand gold (style guide) */
+    --brass-deep:#9A6F2E;     /* derived darker gold for text/links on light */
+    --line:#E2DACB;
+    --line-dk:#34343c;
+    --soft:#6E6A60;
+    --serif: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:#2a2a2f;font-family:var(--sans);color:var(--ink);}
+  img{max-width:100%;}
+
+  /* mockup chrome */
+  .mock-note{max-width:1120px;margin:0 auto;padding:26px 24px 14px;color:#cfc9bb;text-align:center;}
+  .mock-note .eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--brass);margin:0 0 8px;}
+  .mock-note p{font-size:13.5px;line-height:1.6;margin:0 auto;max-width:68ch;color:#b8b2a4;}
+  .browser{max-width:1120px;margin:0 auto 50px;border-radius:12px 12px 10px 10px;overflow:hidden;
+    box-shadow:0 40px 80px -30px rgba(0,0,0,.7);background:var(--paper);}
+  .bar{background:#e9e4da;display:flex;align-items:center;gap:7px;padding:11px 14px;border-bottom:1px solid var(--line);}
+  .bar i{width:11px;height:11px;border-radius:50%;background:#ccc4b5;display:block;}
+  .bar .url{margin-left:12px;font-size:11px;color:#8a8473;background:#fff;border-radius:5px;padding:5px 12px;letter-spacing:.02em;}
+
+  /* layout primitives */
+  .wrap{max-width:1000px;margin:0 auto;padding:0 40px;}
+  .section{padding:60px 0;}
+  h1,h2,h3{text-wrap:balance;}
+
+  /* header */
+  header.site{position:sticky;top:0;z-index:5;background:rgba(250,247,241,.92);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);}
+  .nav{max-width:1000px;margin:0 auto;padding:14px 40px;display:flex;align-items:center;justify-content:space-between;gap:20px;}
+  .brand{font-family:var(--serif);font-weight:600;font-size:18px;color:var(--onyx);letter-spacing:.02em;line-height:1;}
+  .brand b{color:var(--brass-deep);font-weight:600;}
+  .brand span{display:block;font-family:var(--sans);font-size:8px;letter-spacing:.32em;text-transform:uppercase;color:var(--soft);margin-top:5px;font-weight:600;}
+  nav.links{display:flex;gap:22px;align-items:center;}
+  nav.links a{font-size:12.5px;color:var(--ink);text-decoration:none;letter-spacing:.01em;}
+  nav.links a:hover{color:var(--navy);}
+  .btn{font-family:var(--sans);font-weight:600;font-size:12px;letter-spacing:.04em;border-radius:6px;
+    padding:10px 16px;text-decoration:none;display:inline-block;cursor:pointer;border:1.5px solid transparent;}
+  .btn-primary{background:var(--onyx);color:#fff;}
+  .btn-primary:hover{background:#33333b;}
+  .btn-ghost{background:transparent;color:var(--onyx);border-color:var(--onyx);}
+  .btn-ghost:hover{background:var(--onyx);color:#fff;}
+  .btn-brass{background:var(--brass);color:#241c0c;}
+  .btn-brass:hover{background:#f1cd92;}
+
+  /* hero */
+  .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;padding:66px 0 60px;}
+  .hero .eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass-deep);margin:0 0 16px;}
+  .hero h1{font-family:var(--serif);font-weight:600;font-size:43px;line-height:1.08;letter-spacing:-.015em;color:var(--onyx);margin:0 0 18px;}
+  .hero p{font-size:15.5px;line-height:1.6;color:var(--ink);margin:0 0 26px;max-width:42ch;}
+  .hero .cta{display:flex;gap:12px;flex-wrap:wrap;}
+  .hero .btn{padding:13px 22px;font-size:13px;}
+
+  /* hero art panel */
+  .panel{background:linear-gradient(160deg,#2b2b31 0%,#000 100%);border-radius:12px;
+    padding:34px;position:relative;min-height:330px;overflow:hidden;}
+  .panel::after{content:"";position:absolute;inset:10px;border:1px solid rgba(176,137,79,.35);border-radius:8px;pointer-events:none;}
+  .panel .mono{font-family:var(--serif);font-size:128px;line-height:.8;color:rgba(255,255,255,.07);position:absolute;right:18px;bottom:-6px;font-weight:700;}
+  .panel .ptag{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#E8C98C;margin:0 0 6px;}
+  .panel .pname{font-family:var(--serif);font-size:21px;color:#F3EFE7;margin:0 0 22px;}
+  .float{background:var(--paper);border-radius:9px;padding:15px 16px;box-shadow:0 16px 30px -12px rgba(0,0,0,.55);
+    max-width:230px;position:relative;z-index:2;}
+  .float .ft{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);margin:0 0 9px;}
+  .float .row{display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums;}
+  .float .row:last-child{border-bottom:0;}
+  .float .row b{color:var(--onyx);} .float .row .ok{color:#2f7d52;font-weight:700;}
+  .float .stamp{margin-top:11px;font-size:10.5px;color:var(--navy);font-weight:700;display:flex;align-items:center;gap:6px;}
+  .float .stamp .dot{width:7px;height:7px;border-radius:50%;background:#2f7d52;}
+
+  /* trust strip */
+  .trust{background:var(--onyx);color:#d9d3c6;}
+  .trust .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 30px;padding-top:16px;padding-bottom:16px;
+    font-size:12px;letter-spacing:.06em;}
+  .trust b{color:#fff;font-weight:600;} .trust .sep{color:var(--brass);}
+
+  /* section heading */
+  .shead{margin:0 0 34px;}
+  .shead .eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass-deep);margin:0 0 10px;}
+  .shead h2{font-family:var(--serif);font-weight:600;font-size:30px;line-height:1.15;color:var(--onyx);margin:0;letter-spacing:-.01em;}
+  .shead p{font-size:14.5px;color:var(--soft);margin:10px 0 0;max-width:56ch;line-height:1.55;}
+
+  /* service cards */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .scard{background:#fff;border:1px solid var(--line);border-radius:10px;padding:24px 22px;display:flex;flex-direction:column;}
+  .scard .ic{width:34px;height:34px;border-radius:7px;background:var(--paper-2);border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;color:var(--navy);margin-bottom:14px;font-size:15px;}
+  .scard h3{font-family:var(--serif);font-weight:600;font-size:18px;color:var(--onyx);margin:0 0 8px;}
+  .scard p{font-size:13px;line-height:1.5;color:var(--ink);margin:0 0 16px;}
+  .scard a{margin-top:auto;font-size:12px;font-weight:600;color:var(--navy);text-decoration:none;letter-spacing:.02em;}
+  .scard a:hover{color:var(--brass-deep);}
+
+  /* why-a-team (onyx band) */
+  .band-dark{background:var(--onyx);color:#e7e1d4;}
+  .why{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center;}
+  .why .eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);margin:0 0 12px;}
+  .why h2{font-family:var(--serif);font-weight:600;font-size:29px;line-height:1.18;color:#fff;margin:0 0 16px;}
+  .why p{font-size:14.5px;line-height:1.65;color:#c3bdae;margin:0;}
+  .stack{display:flex;flex-direction:column;gap:10px;}
+  .layer{display:flex;gap:14px;align-items:center;background:var(--onyx-soft);border:1px solid var(--line-dk);border-radius:9px;padding:14px 16px;}
+  .layer .lv{font-family:var(--serif);font-style:italic;color:#E8C98C;font-size:13px;flex:0 0 auto;width:58px;}
+  .layer .lt b{color:#fff;font-size:13.5px;display:block;margin-bottom:2px;}
+  .layer .lt span{color:#b3ab9b;font-size:11.5px;line-height:1.4;}
+
+  /* who we serve */
+  .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  .tile{background:#fff;border:1px solid var(--line);border-radius:9px;padding:18px 16px;}
+  .tile .tn{font-family:var(--serif);font-size:15px;color:var(--onyx);margin:0 0 5px;font-weight:600;}
+  .tile p{font-size:11.5px;color:var(--soft);margin:0;line-height:1.4;}
+  .tile .bar{height:3px;width:26px;background:var(--brass);border-radius:2px;margin-bottom:13px;}
+
+  /* team preview */
+  .team{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+  .member{text-align:center;}
+  .avatar{width:84px;height:84px;border-radius:50%;margin:0 auto 12px;background:linear-gradient(155deg,#3a3a40,#141416);
+    color:#F3EFE7;font-family:var(--serif);font-size:27px;display:flex;align-items:center;justify-content:center;letter-spacing:.02em;
+    border:2px solid var(--brass);}
+  .member .nm{font-size:14px;font-weight:700;color:var(--onyx);}
+  .member .ti{font-size:11.5px;color:var(--soft);margin-top:3px;line-height:1.35;}
+  .team-foot{text-align:center;margin-top:30px;}
+
+  /* proof */
+  .band-warm{background:var(--paper-2);}
+  .quote{max-width:720px;margin:0 auto;text-align:center;}
+  .quote .mk{font-family:var(--serif);font-size:50px;color:var(--brass);line-height:.5;height:24px;}
+  .quote blockquote{font-family:var(--serif);font-size:22px;line-height:1.42;color:var(--onyx);margin:0 0 18px;font-style:italic;text-wrap:balance;}
+  .quote .who{font-size:12.5px;color:var(--soft);letter-spacing:.04em;}
+  .quote .who b{color:var(--navy);}
+  .ph{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#b1a890;margin-top:14px;}
+
+  /* CTA */
+  .cta-band{background:var(--onyx);color:#fff;text-align:center;}
+  .cta-band h2{font-family:var(--serif);font-weight:600;font-size:30px;margin:0 0 10px;color:#fff;}
+  .cta-band p{font-size:14.5px;color:#c3bdae;margin:0 0 24px;}
+
+  /* footer */
+  footer.site{background:var(--onyx);color:#9b9588;}
+  footer .wrap{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:30px;padding-top:46px;padding-bottom:30px;}
+  footer .brand{color:#F3EFE7;} footer .brand span{color:#7d7768;}
+  footer p,footer a{font-size:12px;line-height:1.85;color:#9b9588;text-decoration:none;}
+  footer a:hover{color:#E8C98C;}
+  footer h4{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--brass);margin:0 0 8px;}
+  footer .col{display:flex;flex-direction:column;}
+  .legal{border-top:1px solid var(--line-dk);}
+  .legal .wrap{display:flex;justify-content:space-between;padding:14px 40px;font-size:10.5px;color:#76715f;flex-wrap:wrap;gap:8px;}
+
+  a:focus-visible,.btn:focus-visible{outline:2px solid var(--brass);outline-offset:3px;}
+
+  @media (max-width:820px){
+    .hero,.why{grid-template-columns:1fr;gap:30px;}
+    .cards,.tiles,.team{grid-template-columns:1fr 1fr;}
+    footer .wrap{grid-template-columns:1fr 1fr;}
+    .hero h1{font-size:34px;}
+  }
+  @media (max-width:520px){
+    .wrap,.nav{padding-left:22px;padding-right:22px;}
+    .cards,.tiles,.team,footer .wrap{grid-template-columns:1fr;}
+    nav.links{display:none;}
+  }
+</style>
+
+<div class="mock-note">
+  <p class="eyebrow">Visual mockup · Home page redesign</p>
+  <p>This is a clickable sketch of how the new home page could look and flow — using your official brand palette: gold (#EBBC79), black, and a warm off-white. (No blue — that color isn't in your style guide.) A slightly darker gold is used for small text and links so they stay legible. Photos and the testimonial appear as labeled placeholders; the team uses initials in place of real headshots.</p>
+</div>
+
+<div class="browser">
+  <div class="bar"><i></i><i></i><i></i><span class="url">onyxcfo.com</span></div>
+
+  <!-- HEADER -->
+  <header class="site">
+    <div class="nav">
+      <div class="brand">ONYX <b>Accounting Group</b><span>Bookkeeping · Controller · CFO</span></div>
+      <nav class="links">
+        <a href="#">Services</a>
+        <a href="#">Who We Serve</a>
+        <a href="#">About</a>
+        <a href="#">FAQ</a>
+        <a href="#" class="btn btn-primary">Call us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <div class="wrap">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Scottsdale, AZ · Serving clients nationwide</p>
+        <h1>A full accounting team behind your business.</h1>
+        <p>Bookkeeping, controller, and CFO-level support — organized, accurate, and built to grow with you. Not a solo bookkeeper, and not an app: a real team that owns your numbers.</p>
+        <div class="cta">
+          <a href="#" class="btn btn-primary">Talk to our team</a>
+          <a href="#" class="btn btn-ghost">See our services</a>
+        </div>
+      </div>
+      <div class="panel">
+        <p class="ptag">Monthly close</p>
+        <p class="pname">Books you can trust.</p>
+        <div class="float">
+          <p class="ft">June close · summary</p>
+          <div class="row"><span>Bank reconciliations</span><b class="ok">✓ Done</b></div>
+          <div class="row"><span>AP / AR current</span><b class="ok">✓ Done</b></div>
+          <div class="row"><span>Financials delivered</span><b>Jun 5</b></div>
+          <div class="stamp"><span class="dot"></span> Reviewed by your controller</div>
+        </div>
+        <span class="mono">O</span>
+      </div>
+    </section>
+  </div>
+
+  <!-- TRUST STRIP -->
+  <div class="trust">
+    <div class="wrap">
+      <span><b>Scottsdale-based</b>, serving clients nationwide</span><span class="sep">·</span>
+      <span>Built on <b>QuickBooks</b></span><span class="sep">·</span>
+      <span><b>One-business-day</b> response</span><span class="sep">·</span>
+      <span>Bookkeeping through <b>CFO</b></span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="wrap">
+    <section class="section">
+      <div class="shead">
+        <p class="eyebrow">What we do</p>
+        <h2>Support that scales with you</h2>
+        <p>Start where you are and move up the ladder with the same team — no starting over.</p>
+      </div>
+      <div class="cards">
+        <div class="scard">
+          <div class="ic">B</div>
+          <h3>Bookkeeping &amp; AP/AR</h3>
+          <p>Clean, current books every month: reconciliations, bills, invoices, and payroll support.</p>
+          <a href="#">Learn more →</a>
+        </div>
+        <div class="scard">
+          <div class="ic">C</div>
+          <h3>Controller Services</h3>
+          <p>A tighter monthly close, stronger internal controls, and financials you can rely on.</p>
+          <a href="#">Learn more →</a>
+        </div>
+        <div class="scard">
+          <div class="ic">F</div>
+          <h3>Fractional CFO &amp; Advisory</h3>
+          <p>Forecasting, cash-flow planning, and the strategy to raise capital and grow.</p>
+          <a href="#">Learn more →</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- WHY A TEAM -->
+  <div class="band-dark">
+    <div class="wrap">
+      <section class="section why">
+        <div>
+          <p class="eyebrow">The Onyx difference</p>
+          <h2>One bookkeeper is a single point of failure. We're a team.</h2>
+          <p>Most small businesses hand their books to one person — or one app. With Onyx, staff accountants do the daily work, a controller reviews it, and a CFO turns the numbers into decisions. More accuracy, real segregation of duties, and perspective a single set of hands can't give you.</p>
+        </div>
+        <div class="stack">
+          <div class="layer"><span class="lv">Daily</span><span class="lt"><b>Staff Accountants</b><span>Transactions, reconciliations, AP/AR</span></span></div>
+          <div class="layer"><span class="lv">Review</span><span class="lt"><b>Controller</b><span>Month-end close &amp; internal controls</span></span></div>
+          <div class="layer"><span class="lv">Strategy</span><span class="lt"><b>CFO</b><span>Forecasting, cash flow &amp; growth</span></span></div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- WHO WE SERVE -->
+  <div class="wrap">
+    <section class="section">
+      <div class="shead">
+        <p class="eyebrow">Who we work with</p>
+        <h2>Built for businesses in motion</h2>
+      </div>
+      <div class="tiles">
+        <div class="tile"><div class="bar"></div><p class="tn">Startups &amp; small business</p><p>Set up right from the start.</p></div>
+        <div class="tile"><div class="bar"></div><p class="tn">Real estate &amp; multi-entity</p><p>Holding companies and complex structures.</p></div>
+        <div class="tile"><div class="bar"></div><p class="tn">Multi-state companies</p><p>Growing across state lines.</p></div>
+        <div class="tile"><div class="bar"></div><p class="tn">Service businesses</p><p>Clarity on what drives profit.</p></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- TEAM PREVIEW -->
+  <div class="band-warm">
+    <div class="wrap">
+      <section class="section">
+        <div class="shead">
+          <p class="eyebrow">The people behind your numbers</p>
+          <h2>A team you can actually name</h2>
+        </div>
+        <div class="team">
+          <div class="member"><div class="avatar">SN</div><div class="nm">Steven Nikolov</div><div class="ti">Founder, Principal &amp; CFO</div></div>
+          <div class="member"><div class="avatar">LD</div><div class="nm">Lisa Danforth</div><div class="ti">Chief Financial Officer</div></div>
+          <div class="member"><div class="avatar">CC</div><div class="nm">Cindi Campbell</div><div class="ti">Controller</div></div>
+          <div class="member"><div class="avatar">JM</div><div class="nm">Josephine Mack</div><div class="ti">Chief of Staff</div></div>
+        </div>
+        <div class="team-foot"><a href="#" class="btn btn-ghost">Meet the full team →</a></div>
+      </section>
+    </div>
+  </div>
+
+  <!-- PROOF -->
+  <div class="wrap">
+    <section class="section">
+      <div class="quote">
+        <div class="mk">“</div>
+        <blockquote>We have several entities, and our books used to be a constant source of stress. Onyx took it over, cleaned everything up, and now I get clear financials every month without chasing anyone.</blockquote>
+        <div class="who"><b>[Client first name]</b> · Real estate holding company</div>
+        <div class="ph">Placeholder — replace with a real, approved client quote</div>
+      </div>
+    </section>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-band">
+    <div class="wrap">
+      <section class="section">
+        <h2>Reach out now and start sleeping better.</h2>
+        <p>Tell us what's keeping you up at night. We respond within one business day.</p>
+        <a href="#" class="btn btn-brass">Let's connect</a>
+      </section>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site">
+    <div class="wrap">
+      <div class="col">
+        <div class="brand">ONYX <b style="color:#E8C98C;">Accounting Group</b><span>Bookkeeping · Controller · CFO</span></div>
+        <p style="margin-top:14px;">14614 N Kierland Blvd, Suite N220<br>Scottsdale, AZ 85254</p>
+      </div>
+      <div class="col">
+        <h4>Explore</h4>
+        <a href="#">Services</a><a href="#">Who We Serve</a><a href="#">About &amp; Team</a><a href="#">FAQ</a><a href="#">Contact</a>
+      </div>
+      <div class="col">
+        <h4>Get in touch</h4>
+        <a href="#">(480) 442-3119</a><a href="#">contact@onyxcfo.com</a><a href="#">LinkedIn →</a>
+      </div>
+    </div>
+    <div class="legal"><div class="wrap"><span>© 2026 Onyx Accounting Group, LLC · Registered in Arizona</span><span>Privacy · SMS Terms</span></div></div>
+  </footer>
+</div>
+
+<div class="mock-note" style="padding-bottom:50px;">
+  <p>Now matched to your official style guide — gold, black, and white. Want a different page mocked up the same way (the About/Team page is the highest-impact one), or a version with more vs. less gold so you can dial in the amount? Just say the word.</p>
+</div>

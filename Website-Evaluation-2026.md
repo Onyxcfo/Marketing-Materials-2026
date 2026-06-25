@@ -317,13 +317,24 @@ The current home page is hero → six analogy text blocks → form → band. Rep
 - **Sticky, simple header:** logo left, nav right, one "Call us" button (already close to this — keep it).
 - **Mobile:** single-column, generous tap targets, click-to-call phone, form fields easy to thumb.
 
-### 15.4 Color & palette direction
-- **Keep onyx black as the anchor** — it's timeless and on-brand for the name. Don't lose it.
-- **Swap pure white for a warm off-white** (e.g., a paper neutral) so the site feels current rather than stark.
-- **Commit to ONE deliberate accent, used sparingly.** The site currently leans on a **gray-blue**, which is professional but *generic* for finance — nearly every CPA/bank uses it, and a desaturated blue + gray can feel cold and flat.
-  - **Option A — enrich the blue:** move from a muted gray-blue to a deeper **ink-navy or teal-blue** with more depth; keeps the trust signal but feels less default.
-  - **Option B — blue + warm metallic:** pair the blue with a restrained **brass/gold** as a secondary (the combination in the banker handouts). Blue + brass is a classic "premium finance" pairing that still reads current.
-  - Either way, define exact hex values and use the accent intentionally (one or two elements per section), not as a wash.
-- **Cut the heavy photo overlays** — they muddy whatever palette you choose. Solid color blocks let the palette read cleanly.
+### 15.4 Color & palette direction — *now confirmed against the official style guide*
+The Onyx logo style guide defines the brand palette as exactly three colors:
 
-*To make this concrete: if you share your current blue/gray hex values (or the logo colors), I can hand you a refreshed palette — onyx + warm neutral + a defined accent — with exact hex codes ready for Squarespace, plus a simple home-page wireframe.*
+| Role | Color | Hex |
+|---|---|---|
+| Brand gold | soft gold | **#EBBC79** (C7 M27 Y60 K0) |
+| Black | black | **#000000** |
+| White | white | **#FFFFFF** |
+
+Brand display type is a **serif** wordmark ("ONYX") with a clean **sans** for "ACCOUNTING GROUP"; **Lora** is confirmed as a brand serif.
+
+**The key finding: the gray-blue currently on the website is *off-brand*.** It does not appear anywhere in the style guide — it's almost certainly a leftover Squarespace template color. That's why it reads as generic and a little flat: it isn't actually your brand color.
+
+**Recommendation:**
+- **Use the real palette — gold + black + white.** It's timeless and premium; nothing here is outdated.
+- **Replace the gray-blue with brand gold (#EBBC79)** as the single accent, used sparingly (buttons, rules, small highlights), with **black** as the anchor.
+- **For legibility,** small gold text/links on a light background should use a **slightly darker gold (≈ #9A6F2E)** — #EBBC79 is too light for body-size text on white. Reserve the bright #EBBC79 for fills, large elements, and accents.
+- **Warm vs. pure white:** the guide specifies pure #FFFFFF; a *very* slightly warm off-white (≈ #FAF7F1) in large UI areas reads a touch more premium, but pure white is fully on-brand — designer's choice.
+- **Cut the heavy photo overlays** — they muddy the gold/black palette. Solid color blocks let it read cleanly.
+
+*A corrected home-page mockup using this exact palette (gold/black/white, no blue) has been produced — see the Artifact link in chat.*
