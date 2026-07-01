@@ -20,49 +20,50 @@
     box-shadow:0 30px 60px -22px rgba(0,0,0,.7);}
 
   /* ---------------- FRONT ---------------- */
-  .front{background:var(--onyx);color:#fff;padding:38px 46px 30px;display:flex;flex-direction:column;height:100%;}
+  .front{background:var(--onyx);color:#fff;padding:36px 44px 26px;display:flex;flex-direction:column;height:100%;}
   .fhead{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;}
   .wm{font-family:var(--serif);font-weight:600;font-size:20px;color:var(--gold);letter-spacing:.02em;line-height:1;white-space:nowrap;}
   .wm span{display:block;font-family:var(--sans);font-size:7.5px;letter-spacing:.34em;color:#b98f4e;margin-top:6px;font-weight:600;}
   .fhead .rt{text-align:right;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:#8a8474;padding-top:4px;line-height:1.5;}
-  .ftitle{font-family:var(--serif);font-weight:600;font-size:29px;color:#fff;letter-spacing:.005em;margin:16px 0 2px;line-height:1.05;}
-  .fsub{font-size:12px;color:#b7b0a1;margin:0 0 12px;}
+  .ftitle{font-family:var(--serif);font-weight:600;font-size:28px;color:#fff;letter-spacing:.005em;margin:12px 0 2px;line-height:1.05;}
+  .fsub{font-size:12px;color:#b7b0a1;margin:0 0 14px;}
 
-  /* staircase */
-  .ladder{position:relative;flex:1;min-height:0;}
-  .cols{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:end;}
-  .col{border:1px solid var(--line-dk);border-top:3px solid var(--gold);border-radius:7px;padding:15px 17px 15px;
+  .ladder{flex:1;min-height:0;display:flex;flex-direction:column;}
+  .cols{flex:1;min-height:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:end;}
+  .col{border:1px solid var(--line-dk);border-top:3px solid var(--gold);border-radius:7px;padding:14px 16px 14px;
     display:flex;flex-direction:column;background:var(--onyx-2);}
   .col.l1{height:80%;}
   .col.l2{height:90%;}
-  .col.l3{height:100%;background:linear-gradient(180deg,rgba(235,188,121,.12),rgba(235,188,121,.03));border-color:rgba(235,188,121,.45);}
-  .col .lv{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);font-weight:700;margin:0 0 6px;}
+  .col.l3{height:100%;background:linear-gradient(180deg,rgba(235,188,121,.13),rgba(235,188,121,.03));border-color:rgba(235,188,121,.45);}
+  .col .lv{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);font-weight:700;margin:0 0 5px;}
   .col .stage-name{font-family:var(--serif);font-size:17px;color:#fff;margin:0;line-height:1.1;}
   .col .role{font-size:10.5px;color:#c7c0b1;font-style:italic;margin:2px 0 0;}
-  .col .div{height:1px;background:var(--line-dk);margin:11px 0 10px;}
+  .col .div{height:1px;background:var(--line-dk);margin:10px 0 9px;}
   .col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;}
   .col li{font-size:11px;color:#e9e3d6;line-height:1.3;display:flex;gap:8px;align-items:flex-start;}
   .col li .d{flex:0 0 auto;width:4px;height:4px;border-radius:50%;background:var(--gold);margin-top:5px;}
 
-  /* rising strategic-value guide, follows the tops */
-  .sguide{position:absolute;inset:0;z-index:4;pointer-events:none;}
-  .stag{position:absolute;left:0;top:1px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700;z-index:5;}
-  .shead{position:absolute;right:-1px;top:-5px;width:0;height:0;border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:9px solid var(--gold);z-index:5;}
+  /* clean strategic-value axis beneath the bars */
+  .axis{display:flex;align-items:center;gap:12px;margin:13px 2px 0;}
+  .axis .tag{font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:700;white-space:nowrap;}
+  .axis .track{flex:1;height:2px;background:linear-gradient(90deg,rgba(235,188,121,.28),var(--gold));border-radius:2px;}
+  .axis .head{width:0;height:0;border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:9px solid var(--gold);}
 
-  .fnote{text-align:center;font-family:var(--serif);font-style:italic;font-size:12px;color:#c7c0b1;margin:14px 0 0;}
+  .fnote{text-align:center;font-family:var(--serif);font-style:italic;font-size:11.5px;color:#c7c0b1;margin:11px 0 0;}
   .fnote b{color:var(--gold);font-style:normal;font-weight:600;}
 
   /* ---------------- BACK ---------------- */
-  .back{background:linear-gradient(180deg,var(--paper),var(--paper-2));height:100%;padding:42px 48px;
-    display:grid;grid-template-columns:1.4fr .85fr;gap:0;position:relative;}
+  .back{background:linear-gradient(180deg,var(--paper),var(--paper-2));height:100%;padding:38px 48px 24px;
+    display:flex;flex-direction:column;position:relative;}
   .back::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;
     background:linear-gradient(90deg,var(--gold-deep),var(--gold) 45%,#F4D49E 75%,var(--gold));}
-  .bleft{padding-right:38px;display:flex;flex-direction:column;justify-content:center;}
+  .brow{flex:1;display:grid;grid-template-columns:1.4fr .85fr;align-items:center;}
+  .bleft{padding-right:38px;}
   .wm2{font-family:var(--serif);font-weight:600;font-size:21px;color:var(--onyx);letter-spacing:.02em;line-height:1;}
   .wm2 b{color:var(--gold-deep);font-weight:600;}
   .wm2 span{display:block;font-family:var(--sans);font-size:7.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--soft);margin-top:6px;font-weight:600;}
-  .back h2{font-family:var(--serif);font-weight:600;font-size:26px;color:var(--onyx);line-height:1.15;margin:16px 0 12px;text-wrap:balance;}
-  .back .body{font-size:12.5px;line-height:1.55;color:var(--ink);margin:0 0 17px;max-width:46ch;}
+  .back h2{font-family:var(--serif);font-weight:600;font-size:26px;color:var(--onyx);line-height:1.15;margin:15px 0 12px;text-wrap:balance;}
+  .back .body{font-size:12.5px;line-height:1.55;color:var(--ink);margin:0 0 16px;max-width:46ch;}
   .hl{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 9px;font-weight:700;}
   .help{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;}
   .help li{font-size:12.5px;color:var(--ink);line-height:1.35;display:flex;gap:9px;align-items:flex-start;}
@@ -73,8 +74,12 @@
   .bright .ti{font-size:11px;color:var(--soft);margin:3px 0 15px;}
   .bright .ln{font-size:12.5px;color:var(--ink);line-height:2;font-variant-numeric:tabular-nums;}
   .bright .ln b{color:var(--gold-deep);}
-  .qr{margin-top:17px;width:80px;height:80px;border:1.5px dashed var(--gold-deep);border-radius:7px;display:flex;
+  .qr{margin-top:16px;width:78px;height:78px;border:1.5px dashed var(--gold-deep);border-radius:7px;display:flex;
     align-items:center;justify-content:center;text-align:center;font-size:8px;letter-spacing:.06em;text-transform:uppercase;color:#9a8f74;line-height:1.4;padding:6px;}
+  .bfoot{border-top:1px solid var(--rule);margin-top:14px;padding-top:12px;text-align:center;
+    font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--soft);}
+  .bfoot b{color:var(--gold-deep);font-weight:700;}
+  .bfoot .sep{color:var(--rule);margin:0 8px;}
 
   .note{max-width:900px;margin:34px auto 0;text-align:center;color:#8e887b;font-size:11.5px;line-height:1.6;}
   .note code{color:#cdbfa0;font-family:var(--sans);}
@@ -82,17 +87,17 @@
   @media (max-width:640px){
     .card{aspect-ratio:auto;}.front,.back{height:auto;}
     .ftitle{font-size:22px;}.front{padding:24px;}
-    .ladder{height:auto;}.cols{position:static;grid-template-columns:1fr;}
-    .col.l1,.col.l2,.col.l3{height:auto;}.sguide,.stag,.shead{display:none;}
-    .back{grid-template-columns:1fr;padding:26px;}
+    .ladder{height:auto;}.cols{grid-template-columns:1fr;}
+    .col.l1,.col.l2,.col.l3{height:auto;}
+    .brow{grid-template-columns:1fr;}
     .bleft{padding-right:0;}.bright{border-left:0;border-top:1px solid var(--rule);padding-left:0;padding-top:18px;margin-top:18px;}
   }
   @media print{body{background:#fff;padding:0;}.intro,.note,.facelabel{display:none;}.card{box-shadow:none;border-radius:0;page-break-after:always;}}
 </style>
 
 <div class="intro">
-  <p class="eyebrow">Mockup v3 · Levels of Service — horizontal · front + back</p>
-  <p>The staircase you wanted — levels rising in height on a shared baseline, with the gold "strategic value" arrow running up the tops. Front = the ladder (doubles as a slide); back = the loan-ready referral pitch. Brand black + gold; the gold "O" wordmark stands in for your real logo.</p>
+  <p class="eyebrow">Mockup v4 · Levels of Service — horizontal · front + back</p>
+  <p>Fixes from the review: the arrow now runs as a clean axis <em>beneath</em> the bars (no more slashing through text); higher tiers carry more line items so the taller boxes fill; and the back has a footer strip so it's not floaty. Brand black + gold; the gold "O" wordmark stands in for your real logo.</p>
 </div>
 
 <div class="stage">
@@ -133,6 +138,7 @@
                 <li><span class="d"></span>Financial statements you can trust</li>
                 <li><span class="d"></span>Arizona TPT filings</li>
                 <li><span class="d"></span>Internal controls &amp; key metrics</li>
+                <li><span class="d"></span>Cash-flow reporting</li>
               </ul>
             </div>
             <div class="col l3">
@@ -145,14 +151,16 @@
                 <li><span class="d"></span>Cash-flow planning &amp; projections</li>
                 <li><span class="d"></span>Financing &amp; investor support</li>
                 <li><span class="d"></span>Board &amp; investor reporting</li>
+                <li><span class="d"></span>KPI dashboards &amp; trend analysis</li>
+                <li><span class="d"></span>Audit &amp; financing preparation</li>
               </ul>
             </div>
           </div>
-          <span class="stag">Strategic value</span>
-          <svg class="sguide" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-            <line x1="1.5" y1="19" x2="98" y2="1" stroke="#EBBC79" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
-          </svg>
-          <span class="shead"></span>
+          <div class="axis" aria-hidden="true">
+            <span class="tag">Strategic value</span>
+            <span class="track"></span>
+            <span class="head"></span>
+          </div>
         </div>
 
         <p class="fnote">One team, every level — so your client <b>never has to start over</b>.</p>
@@ -165,22 +173,27 @@
     <p class="facelabel">Back — the referral pitch</p>
     <article class="card">
       <div class="back">
-        <div class="bleft">
-          <div class="wm2">ONYX <b>Accounting Group</b><span>Bookkeeping · Controller · CFO</span></div>
-          <h2>When a deal needs clean books, send it to us.</h2>
-          <p class="body">Onyx is a Scottsdale-based accounting team — bookkeeping through CFO-level strategy — that gets a borrower's financials loan-ready and keeps them that way. We work alongside you and your client's CPA, so deals reach your desk prepared.</p>
-          <p class="hl">How we help your pipeline</p>
-          <ul class="help">
-            <li><span class="d"></span><span><b>Cleanup &amp; catch-up</b> for books that aren't lendable yet</span></li>
-            <li><span class="d"></span><span><b>Monthly bookkeeping &amp; controller</b> services that stay current</span></li>
-            <li><span class="d"></span><span><b>CFO-level forecasting &amp; projections</b> built for a credit request</span></li>
-          </ul>
+        <div class="brow">
+          <div class="bleft">
+            <div class="wm2">ONYX <b>Accounting Group</b><span>Bookkeeping · Controller · CFO</span></div>
+            <h2>When a deal needs clean books, send it to us.</h2>
+            <p class="body">Onyx is a Scottsdale-based accounting team — bookkeeping through CFO-level strategy — that gets a borrower's financials loan-ready and keeps them that way. We work alongside you and your client's CPA, so deals reach your desk prepared.</p>
+            <p class="hl">How we help your pipeline</p>
+            <ul class="help">
+              <li><span class="d"></span><span><b>Cleanup &amp; catch-up</b> for books that aren't lendable yet</span></li>
+              <li><span class="d"></span><span><b>Monthly bookkeeping &amp; controller</b> services that stay current</span></li>
+              <li><span class="d"></span><span><b>CFO-level forecasting &amp; projections</b> built for a credit request</span></li>
+            </ul>
+          </div>
+          <div class="bright">
+            <div class="nm">Steven Nikolov</div>
+            <div class="ti">Founder, Principal &amp; CFO</div>
+            <div class="ln"><b>P</b>&nbsp; (480) 442-3119<br><b>E</b>&nbsp; contact@onyxcfo.com<br><b>W</b>&nbsp; onyxcfo.com</div>
+            <div class="qr">QR →<br>onyxcfo.com</div>
+          </div>
         </div>
-        <div class="bright">
-          <div class="nm">Steven Nikolov</div>
-          <div class="ti">Founder, Principal &amp; CFO</div>
-          <div class="ln"><b>P</b>&nbsp; (480) 442-3119<br><b>E</b>&nbsp; contact@onyxcfo.com<br><b>W</b>&nbsp; onyxcfo.com</div>
-          <div class="qr">QR →<br>onyxcfo.com</div>
+        <div class="bfoot">
+          <b>Transactional</b><span class="sep">→</span><b>Controller</b><span class="sep">→</span><b>Fractional CFO</b>
         </div>
       </div>
     </article>
@@ -188,4 +201,4 @@
 
 </div>
 
-<p class="note">Swap the <code>ONYX</code> wordmark for the real logo, point the QR at its destination, and the front drops straight into the PowerPoint. Prefer equal-height columns instead of the staircase? That version is saved too — easy to switch back.</p>
+<p class="note">Swap the <code>ONYX</code> wordmark for the real logo, point the QR at its destination, and the front drops straight into the PowerPoint.</p>
