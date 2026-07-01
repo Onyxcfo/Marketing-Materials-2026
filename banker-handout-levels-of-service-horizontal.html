@@ -1,171 +1,189 @@
 <title>Onyx — Accounting Levels of Service (horizontal, front + back)</title>
 <style>
   :root{
-    --onyx:#141416; --onyx-2:#1e1e22; --paper:#F6F1E8; --paper-2:#EFE8DA;
-    --ink:#33323A; --soft:#726c60;
-    --gold:#EBBC79; --gold-deep:#9A6F2E; --line-dk:#38343c; --rule:#D8CFBD;
+    --onyx:#141416; --onyx-2:#202026; --paper:#F7F2E9; --paper-2:#EFE7D8;
+    --ink:#38373f; --soft:#726c60;
+    --gold:#EBBC79; --gold-deep:#9A6F2E; --line-dk:#39353f; --rule:#D8CFBD;
     --serif: Georgia, "Iowan Old Style", "Times New Roman", serif;
     --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   }
   *{box-sizing:border-box;}
-  body{margin:0;background:#2a2a2f;font-family:var(--sans);color:var(--ink);padding:44px 18px 60px;}
-  .intro{max-width:900px;margin:0 auto 34px;text-align:center;color:#cfc9bb;}
+  body{margin:0;background:#2b2b30;font-family:var(--sans);color:var(--ink);padding:44px 18px 60px;}
+  .intro{max-width:900px;margin:0 auto 32px;text-align:center;color:#cfc9bb;}
   .intro .eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin:0 0 10px;}
-  .intro h1{font-family:var(--serif);font-weight:600;color:#F3EFE7;font-size:22px;line-height:1.35;margin:0 0 10px;}
-  .intro p{font-size:13.5px;line-height:1.6;margin:0 auto;max-width:70ch;color:#b8b2a4;}
+  .intro p{font-size:13.5px;line-height:1.6;margin:0 auto;max-width:72ch;color:#b8b2a4;}
   .stage{display:flex;flex-direction:column;gap:30px;align-items:center;}
-  .facelabel{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#9a9384;margin:0 0 8px;align-self:flex-start;}
+  .wrapc{width:min(1000px,96vw);}
+  .facelabel{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#9a9384;margin:0 0 9px;}
 
-  /* landscape card 16:9 */
-  .card{width:min(960px,96vw);aspect-ratio:16/9;border-radius:8px;overflow:hidden;position:relative;
+  .card{width:100%;aspect-ratio:16/9;border-radius:9px;overflow:hidden;position:relative;
     box-shadow:0 30px 60px -22px rgba(0,0,0,.7);}
-  .wrapc{width:min(960px,96vw);}
 
-  /* ---------- FRONT (dark) ---------- */
-  .front{background:var(--onyx);color:#fff;padding:34px 40px 30px;display:flex;flex-direction:column;}
-  .fhead{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:6px;}
-  .wm{font-family:var(--serif);font-weight:600;font-size:19px;color:var(--gold);letter-spacing:.02em;line-height:1;white-space:nowrap;}
-  .wm span{display:block;font-family:var(--sans);font-size:7px;letter-spacing:.34em;color:#b98f4e;margin-top:5px;font-weight:600;}
-  .ftitle{font-family:var(--serif);font-weight:600;font-size:27px;color:#fff;letter-spacing:.01em;text-align:right;line-height:1.05;}
+  /* ---------------- FRONT ---------------- */
+  .front{background:var(--onyx);color:#fff;padding:40px 48px 34px;display:flex;flex-direction:column;height:100%;}
+  .fhead{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;}
+  .wm{font-family:var(--serif);font-weight:600;font-size:20px;color:var(--gold);letter-spacing:.02em;line-height:1;white-space:nowrap;}
+  .wm span{display:block;font-family:var(--sans);font-size:7.5px;letter-spacing:.34em;color:#b98f4e;margin-top:6px;font-weight:600;}
+  .fhead .rt{text-align:right;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:#8a8474;padding-top:4px;}
 
-  .arrowrow{position:relative;height:30px;margin:6px 0 2px;}
-  .arrowrow .lbl{position:absolute;left:0;bottom:0;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:700;}
-  .arrowrow svg{position:absolute;right:0;bottom:2px;width:70%;height:30px;}
+  .ftitle{font-family:var(--serif);font-weight:600;font-size:31px;color:#fff;letter-spacing:.005em;margin:20px 0 3px;line-height:1.05;}
+  .fsub{font-size:12.5px;color:#b7b0a1;margin:0 0 16px;}
 
-  .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:end;flex:1;}
-  .col{background:var(--onyx-2);border:1px solid var(--line-dk);border-top:3px solid var(--gold);border-radius:6px;
-    padding:15px 16px 16px;display:flex;flex-direction:column;}
-  .col.l1{height:80%;} .col.l2{height:90%;} .col.l3{height:100%;}
-  .col .lv{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:700;margin:0 0 2px;}
-  .col .stage-name{font-family:var(--serif);font-size:16px;color:#fff;margin:0 0 1px;line-height:1.1;}
-  .col .role{font-size:10.5px;color:#c9c2b3;font-style:italic;margin:0 0 10px;}
-  .col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:5px;}
-  .col li{font-size:11px;color:#e7e1d4;line-height:1.3;display:flex;gap:7px;align-items:flex-start;}
+  /* strategic-value arrow: full width, aligned */
+  .arrow{display:flex;align-items:center;gap:14px;margin:0 0 15px;}
+  .arrow .tag{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:700;white-space:nowrap;}
+  .arrow .track{flex:1;height:2px;background:linear-gradient(90deg,rgba(235,188,121,.25),var(--gold));border-radius:2px;}
+  .arrow .head{width:0;height:0;border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:9px solid var(--gold);}
+
+  .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;flex:1;min-height:0;}
+  .col{background:var(--onyx-2);border:1px solid var(--line-dk);border-top:3px solid var(--gold);border-radius:7px;
+    padding:16px 18px 17px;display:flex;flex-direction:column;}
+  .col.apex{background:linear-gradient(180deg,rgba(235,188,121,.10),rgba(235,188,121,.03));border-color:rgba(235,188,121,.4);}
+  .col .lv{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:700;margin:0 0 7px;}
+  .col .stage-name{font-family:var(--serif);font-size:18px;color:#fff;margin:0;line-height:1.1;}
+  .col .role{font-size:11px;color:#c7c0b1;font-style:italic;margin:2px 0 0;}
+  .col .div{height:1px;background:var(--line-dk);margin:12px 0 11px;}
+  .col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px;}
+  .col li{font-size:11.5px;color:#e9e3d6;line-height:1.3;display:flex;gap:8px;align-items:flex-start;}
   .col li .d{flex:0 0 auto;width:4px;height:4px;border-radius:50%;background:var(--gold);margin-top:5px;}
-  .fnote{text-align:center;font-family:var(--serif);font-style:italic;font-size:11.5px;color:#c9c2b3;margin:14px 0 0;}
+
+  .fnote{text-align:center;font-family:var(--serif);font-style:italic;font-size:12px;color:#c7c0b1;margin:16px 0 0;}
   .fnote b{color:var(--gold);font-style:normal;font-weight:600;}
 
-  /* ---------- BACK (light) ---------- */
-  .back{background:linear-gradient(180deg,var(--paper),var(--paper-2));padding:34px 44px;display:grid;
-    grid-template-columns:1.35fr .9fr;gap:34px;position:relative;}
+  /* ---------------- BACK ---------------- */
+  .back{background:linear-gradient(180deg,var(--paper),var(--paper-2));height:100%;padding:42px 48px;
+    display:grid;grid-template-columns:1.4fr .85fr;gap:0;position:relative;}
   .back::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;
     background:linear-gradient(90deg,var(--gold-deep),var(--gold) 45%,#F4D49E 75%,var(--gold));}
-  .back .wm2{font-family:var(--serif);font-weight:600;font-size:20px;color:var(--onyx);letter-spacing:.02em;line-height:1;}
-  .back .wm2 b{color:var(--gold-deep);font-weight:600;}
-  .back .wm2 span{display:block;font-family:var(--sans);font-size:7.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--soft);margin-top:6px;font-weight:600;}
-  .back h2{font-family:var(--serif);font-weight:600;font-size:25px;color:var(--onyx);line-height:1.15;margin:18px 0 12px;text-wrap:balance;}
-  .back .body{font-size:12.5px;line-height:1.55;color:var(--ink);margin:0 0 16px;max-width:44ch;}
-  .hl{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 8px;font-weight:700;}
-  .help{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px;}
-  .help li{font-size:12px;color:var(--ink);line-height:1.35;display:flex;gap:8px;align-items:flex-start;}
+  .bleft{padding-right:38px;display:flex;flex-direction:column;justify-content:center;}
+  .wm2{font-family:var(--serif);font-weight:600;font-size:21px;color:var(--onyx);letter-spacing:.02em;line-height:1;}
+  .wm2 b{color:var(--gold-deep);font-weight:600;}
+  .wm2 span{display:block;font-family:var(--sans);font-size:7.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--soft);margin-top:6px;font-weight:600;}
+  .back h2{font-family:var(--serif);font-weight:600;font-size:26px;color:var(--onyx);line-height:1.15;margin:16px 0 12px;text-wrap:balance;}
+  .back .body{font-size:12.5px;line-height:1.55;color:var(--ink);margin:0 0 17px;max-width:46ch;}
+  .hl{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 9px;font-weight:700;}
+  .help{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;}
+  .help li{font-size:12.5px;color:var(--ink);line-height:1.35;display:flex;gap:9px;align-items:flex-start;}
   .help li .d{flex:0 0 auto;width:6px;height:6px;border-radius:50%;background:var(--gold);margin-top:5px;}
   .help li b{color:var(--onyx);}
-  .rcard{border-left:2px solid var(--rule);padding-left:26px;display:flex;flex-direction:column;justify-content:center;}
-  .rcard .nm{font-weight:700;font-size:13px;color:var(--onyx);}
-  .rcard .ti{font-size:11px;color:var(--soft);margin:2px 0 14px;}
-  .rcard .ln{font-size:12px;color:var(--ink);line-height:1.9;font-variant-numeric:tabular-nums;}
-  .rcard .ln b{color:var(--gold-deep);}
-  .qr{margin-top:16px;width:74px;height:74px;border:1.5px dashed var(--gold-deep);border-radius:6px;display:flex;
-    align-items:center;justify-content:center;text-align:center;font-size:7.5px;letter-spacing:.06em;text-transform:uppercase;color:#9a8f74;line-height:1.35;padding:5px;}
+  .bright{border-left:1px solid var(--rule);padding-left:34px;display:flex;flex-direction:column;justify-content:center;}
+  .bright .nm{font-weight:700;font-size:13.5px;color:var(--onyx);}
+  .bright .ti{font-size:11px;color:var(--soft);margin:3px 0 15px;}
+  .bright .ln{font-size:12.5px;color:var(--ink);line-height:2;font-variant-numeric:tabular-nums;}
+  .bright .ln b{color:var(--gold-deep);}
+  .qr{margin-top:17px;width:80px;height:80px;border:1.5px dashed var(--gold-deep);border-radius:7px;display:flex;
+    align-items:center;justify-content:center;text-align:center;font-size:8px;letter-spacing:.06em;text-transform:uppercase;color:#9a8f74;line-height:1.4;padding:6px;}
 
   .note{max-width:900px;margin:34px auto 0;text-align:center;color:#8e887b;font-size:11.5px;line-height:1.6;}
   .note code{color:#cdbfa0;font-family:var(--sans);}
+
   @media (max-width:640px){
-    .ftitle{font-size:18px;}.front{padding:20px;}.back{grid-template-columns:1fr;gap:18px;padding:22px;}
-    .col .lv{font-size:8px;}.col li{font-size:10px;}
-    .rcard{border-left:0;border-top:1px solid var(--rule);padding-left:0;padding-top:16px;}
+    .card{aspect-ratio:auto;}
+    .front,.back{height:auto;}
+    .ftitle{font-size:22px;}.front{padding:24px;}
+    .cols{grid-template-columns:1fr;}
+    .back{grid-template-columns:1fr;padding:26px;}
+    .bleft{padding-right:0;}.bright{border-left:0;border-top:1px solid var(--rule);padding-left:0;padding-top:18px;margin-top:18px;}
   }
   @media print{body{background:#fff;padding:0;}.intro,.note,.facelabel{display:none;}.card{box-shadow:none;border-radius:0;page-break-after:always;}}
 </style>
 
 <div class="intro">
-  <p class="eyebrow">Mockup · Levels of Service — horizontal · front + back</p>
-  <p>Steven's direction: the levels-of-service ladder (front) + the loan-ready referral pitch (back), laid out horizontally. Shown in your brand black + gold (not the blue from the draft — blue isn't in your style guide). Three tiers matched to your real team, with real content in place of the AP/AR placeholders. The front doubles as a PowerPoint slide.</p>
+  <p class="eyebrow">Mockup v2 · Levels of Service — horizontal · front + back</p>
+  <p>Cleaned up: equal, evenly-spaced columns, one full-width "strategic value" arrow, and room to breathe. Front = the levels ladder (doubles as a slide); back = the loan-ready referral pitch. Brand black + gold. The gold "O" wordmark is a stand-in for your real logo.</p>
 </div>
 
 <div class="stage">
 
   <!-- FRONT -->
   <div class="wrapc">
-    <p class="facelabel">Front — the ladder (also works as a slide)</p>
-    <article class="card front" aria-label="Levels of service front">
-      <div class="fhead">
-        <div class="wm">ONYX<span>Accounting Group</span></div>
-        <div class="ftitle">Accounting Levels of Service</div>
-      </div>
-
-      <div class="arrowrow">
-        <span class="lbl">Strategic value</span>
-        <svg viewBox="0 0 600 30" preserveAspectRatio="none" aria-hidden="true">
-          <line x1="4" y1="26" x2="576" y2="6" stroke="#EBBC79" stroke-width="2"/>
-          <polygon points="576,6 560,3 562,13" fill="#EBBC79"/>
-        </svg>
-      </div>
-
-      <div class="cols">
-        <div class="col l1">
-          <p class="lv">Level 1 · Day-to-day</p>
-          <p class="stage-name">Transactional</p>
-          <p class="role">Staff Accountant</p>
-          <ul>
-            <li><span class="d"></span>Accounts payable &amp; receivable</li>
-            <li><span class="d"></span>Bank &amp; credit-card reconciliations</li>
-            <li><span class="d"></span>Payroll support</li>
-            <li><span class="d"></span>Transaction categorization</li>
-          </ul>
+    <p class="facelabel">Front — the ladder</p>
+    <article class="card">
+      <div class="front">
+        <div class="fhead">
+          <div class="wm">ONYX<span>Accounting Group</span></div>
+          <div class="rt">A guide for<br>referral partners</div>
         </div>
-        <div class="col l2">
-          <p class="lv">Level 2 · Month-end close</p>
-          <p class="stage-name">Controller</p>
-          <p class="role">Reliable, reviewed financials</p>
-          <ul>
-            <li><span class="d"></span>Monthly close &amp; balance-sheet reconciliations</li>
-            <li><span class="d"></span>Financial statements you can trust</li>
-            <li><span class="d"></span>Arizona TPT filings</li>
-            <li><span class="d"></span>Internal controls &amp; key metrics</li>
-          </ul>
-        </div>
-        <div class="col l3">
-          <p class="lv">Level 3 · Strategic</p>
-          <p class="stage-name">Fractional CFO</p>
-          <p class="role">Turning numbers into decisions</p>
-          <ul>
-            <li><span class="d"></span>Forecasting &amp; budgeting</li>
-            <li><span class="d"></span>Cash-flow planning &amp; projections</li>
-            <li><span class="d"></span>Financing &amp; investor support</li>
-            <li><span class="d"></span>Board &amp; investor reporting</li>
-          </ul>
-        </div>
-      </div>
 
-      <p class="fnote">One team, every level — so your client <b>never has to start over</b>.</p>
+        <h1 class="ftitle">Accounting Levels of Service</h1>
+        <p class="fsub">Where your client is today — and where we can take them.</p>
+
+        <div class="arrow" aria-hidden="true">
+          <span class="tag">Strategic value</span>
+          <span class="track"></span>
+          <span class="head"></span>
+        </div>
+
+        <div class="cols">
+          <div class="col">
+            <p class="lv">Level 1 · Day-to-day</p>
+            <p class="stage-name">Transactional</p>
+            <p class="role">Staff Accountant</p>
+            <div class="div"></div>
+            <ul>
+              <li><span class="d"></span>Accounts payable &amp; receivable</li>
+              <li><span class="d"></span>Bank &amp; credit-card reconciliations</li>
+              <li><span class="d"></span>Payroll support</li>
+              <li><span class="d"></span>Transaction categorization</li>
+            </ul>
+          </div>
+          <div class="col">
+            <p class="lv">Level 2 · Month-end close</p>
+            <p class="stage-name">Controller</p>
+            <p class="role">Reliable, reviewed financials</p>
+            <div class="div"></div>
+            <ul>
+              <li><span class="d"></span>Monthly close &amp; balance-sheet recs</li>
+              <li><span class="d"></span>Financial statements you can trust</li>
+              <li><span class="d"></span>Arizona TPT filings</li>
+              <li><span class="d"></span>Internal controls &amp; key metrics</li>
+            </ul>
+          </div>
+          <div class="col apex">
+            <p class="lv">Level 3 · Strategic</p>
+            <p class="stage-name">Fractional CFO</p>
+            <p class="role">Turning numbers into decisions</p>
+            <div class="div"></div>
+            <ul>
+              <li><span class="d"></span>Forecasting &amp; budgeting</li>
+              <li><span class="d"></span>Cash-flow planning &amp; projections</li>
+              <li><span class="d"></span>Financing &amp; investor support</li>
+              <li><span class="d"></span>Board &amp; investor reporting</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="fnote">One team, every level — so your client <b>never has to start over</b>.</p>
+      </div>
     </article>
   </div>
 
   <!-- BACK -->
   <div class="wrapc">
-    <p class="facelabel">Back — the referral pitch (from Concept A)</p>
-    <article class="card back" aria-label="Referral pitch back">
-      <div>
-        <div class="wm2">ONYX <b>Accounting Group</b><span>Bookkeeping · Controller · CFO</span></div>
-        <h2>When a deal needs clean books, send it to us.</h2>
-        <p class="body">Onyx is a Scottsdale-based accounting team — bookkeeping through CFO-level strategy — that gets a borrower's financials loan-ready and keeps them that way. We work alongside you and your client's CPA, so deals reach your desk prepared.</p>
-        <p class="hl">How we help your pipeline</p>
-        <ul class="help">
-          <li><span class="d"></span><span><b>Cleanup &amp; catch-up</b> for books that aren't lendable yet</span></li>
-          <li><span class="d"></span><span><b>Monthly bookkeeping &amp; controller</b> services that stay current</span></li>
-          <li><span class="d"></span><span><b>CFO-level forecasting &amp; projections</b> built for a credit request</span></li>
-        </ul>
-      </div>
-      <div class="rcard">
-        <div class="nm">Steven Nikolov</div>
-        <div class="ti">Founder, Principal &amp; CFO</div>
-        <div class="ln"><b>P</b> (480) 442-3119<br><b>E</b> contact@onyxcfo.com<br><b>W</b> onyxcfo.com</div>
-        <div class="qr">QR →<br>onyxcfo.com</div>
+    <p class="facelabel">Back — the referral pitch</p>
+    <article class="card">
+      <div class="back">
+        <div class="bleft">
+          <div class="wm2">ONYX <b>Accounting Group</b><span>Bookkeeping · Controller · CFO</span></div>
+          <h2>When a deal needs clean books, send it to us.</h2>
+          <p class="body">Onyx is a Scottsdale-based accounting team — bookkeeping through CFO-level strategy — that gets a borrower's financials loan-ready and keeps them that way. We work alongside you and your client's CPA, so deals reach your desk prepared.</p>
+          <p class="hl">How we help your pipeline</p>
+          <ul class="help">
+            <li><span class="d"></span><span><b>Cleanup &amp; catch-up</b> for books that aren't lendable yet</span></li>
+            <li><span class="d"></span><span><b>Monthly bookkeeping &amp; controller</b> services that stay current</span></li>
+            <li><span class="d"></span><span><b>CFO-level forecasting &amp; projections</b> built for a credit request</span></li>
+          </ul>
+        </div>
+        <div class="bright">
+          <div class="nm">Steven Nikolov</div>
+          <div class="ti">Founder, Principal &amp; CFO</div>
+          <div class="ln"><b>P</b>&nbsp; (480) 442-3119<br><b>E</b>&nbsp; contact@onyxcfo.com<br><b>W</b>&nbsp; onyxcfo.com</div>
+          <div class="qr">QR →<br>onyxcfo.com</div>
+        </div>
       </div>
     </article>
   </div>
 
 </div>
 
-<p class="note">Swap the <code>ONYX</code> wordmark for the real logo (gold on the dark front, black/gold on the light back), point the QR at its destination, and it's print-ready as a landscape card — the front also drops straight into the PowerPoint. Blue version possible if Steven insists, but black + gold is on-brand.</p>
+<p class="note">Swap the <code>ONYX</code> wordmark for the real logo (gold on the dark front, black on the light back), point the QR at its destination, and the front drops straight into the PowerPoint. Want the ascending "staircase" shape instead of equal columns? That's a quick variant — just say so.</p>
